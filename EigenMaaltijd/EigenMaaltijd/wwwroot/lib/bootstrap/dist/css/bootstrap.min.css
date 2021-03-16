@@ -24,13 +24,14 @@ a:hover
 {
     transform:scale(1.1);
     color: black;
+    text-decoration:none;
 }
 
 body {
     background-color: #bfe8ff;
 }
 
-#container_index_2
+.container-fluid
 {
     text-align:center;
 }
@@ -43,8 +44,7 @@ body {
 #Testlogo:hover
 {
 
-    transform:scale(1.1);
-    transition-duration: 0.25s;
+    transform:scale(1.05);
 }
 
 
