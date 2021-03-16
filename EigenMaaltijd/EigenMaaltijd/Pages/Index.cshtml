@@ -4,22 +4,30 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="container-fluid">
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Logo</a>
-    <button class="navbar-toggler" >
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <title></title>
+</head>
 
-          
-            <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Zoeken naar gerecht...">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+<body>
+ 
+<div class="container-fluid" id="container_index_1">
+    <nav class="navbar navbar-expand" id="nav">
+        <a class="navbar-brand" asp-page="/Index"><img src="~/img/Testlogo.png" height="35" width="140" alt="Testlogo EigenMaaltijd" id="Testlogo" /></a>
+
+        <form class="form" id="form_zoekbalk">
+            <input class="form-control" type="search" placeholder="Zoeken naar gerecht..." id="input_zoekbalk">
         </form>
-       
-        
-    </div>
-</nav>
-<div class="container-fluid">
-    <h1>Welkom bij EigenMaaltijd.</h1>
+
+        <a class="navbar" asp-page="/Inloggen">Aanmelden</a>
+      </nav>
 </div>
+    
+
+    <div class="container-fluid" id="container_index_2">
+        <h1>Welkom bij EigenMaaltijd.</h1>
+    </div>
+</body>
