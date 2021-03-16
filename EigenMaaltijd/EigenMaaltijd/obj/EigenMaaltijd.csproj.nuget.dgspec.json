@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ninob\\source\\repos\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj": {}
+    "C:\\Users\\ninob\\Documents\\GitHub\\P3-groepsproject\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ninob\\source\\repos\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj": {
+    "C:\\Users\\ninob\\Documents\\GitHub\\P3-groepsproject\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ninob\\source\\repos\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj",
+        "projectUniqueName": "C:\\Users\\ninob\\Documents\\GitHub\\P3-groepsproject\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj",
         "projectName": "EigenMaaltijd",
-        "projectPath": "C:\\Users\\ninob\\source\\repos\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj",
+        "projectPath": "C:\\Users\\ninob\\Documents\\GitHub\\P3-groepsproject\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj",
         "packagesPath": "C:\\Users\\ninob\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ninob\\source\\repos\\EigenMaaltijd\\EigenMaaltijd\\obj\\",
+        "outputPath": "C:\\Users\\ninob\\Documents\\GitHub\\P3-groepsproject\\EigenMaaltijd\\EigenMaaltijd\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\ninob\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,7 +29,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net50": {
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -40,13 +41,49 @@
         }
       },
       "frameworks": {
-        "net50": {
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win7-x86": {
-          "#import": []
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Carter": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.23, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            },
+            "Westwind.AspNetCore.LiveReload": {
+              "target": "Package",
+              "version": "[0.3.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
