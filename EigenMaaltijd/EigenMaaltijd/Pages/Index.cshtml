@@ -29,5 +29,22 @@
 
     <div class="container-fluid" id="container_index_2">
         <h1>Welkom bij EigenMaaltijd.</h1>
+               <button type="button" id="btn_1" class="btn btn-dark">Popup scherm</button>
+
+        <div class="popup">
+            <div class="popup-content"> <button type="button" id="btn_close" class="close" >
+                <span aria-hidden="true">&times;</span>
+               
+              </button></div>
+        </div>
+<script>
+    document.getElementById("btn_1").addEventListener("click", function () {
+        document.querySelector(".popup").style.display = "flex";
+      })
+      
+      document.querySelector(".close").addEventListener("click", function () {
+        document.querySelector(".popup").style.display = "none";
+      })
+</script>
     </div>
 </body>
