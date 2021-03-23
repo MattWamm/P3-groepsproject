@@ -1,0 +1,65 @@
+﻿@page
+@model EigenMaaltijd.Pages.Index2Model
+@{
+}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+
+    <div class="container-fluid" id="container_MijnProfiel_1">
+        <nav class="navbar navbar-expand" id="nav">
+            <a class="navbar-brand" asp-page="/Index"><img src="~/img/Testlogo.png" height="35" width="140" alt="Testlogo EigenMaaltijd" id="Testlogo" /></a>
+
+            <form class="form" id="form_zoekbalk">
+                <input class="form-control" type="search" placeholder="Zoeken naar gerecht..." id="input_zoekbalk">
+            </form>
+
+            <a class="navbar" asp-page="/Index">Afmelden</a>
+        </nav>
+    </div>
+
+
+    <div class="container-fluid pt-5 mt-5 ml-0" id="container_Mijnprofiel_2">
+        <div class="row">
+            <div class="col-4">
+                <h1 class="ml-5 pl-5 text-left"><u>Mijn account</u></h1>
+            </div>
+            <div class="col">
+                <h2 class="text-left mb-5">Favoriete gerechten:</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                
+                <img src="~/img/Placeholder.png" class="d-flex justify-content-start ml-5 pl-5" height="200" width="170" />
+                <h2 class="mt-1 ml-5 pl-5 text-left">Milou</h2>
+                <p class="mb-0 ml-5 pl-5 text-left"><strong>Adres:</strong></p>
+                <p class="mb-0 ml-5 pl-5 text-left">Rengerslaan 10</p>
+                <p class="m-0 ml-5 pl-5 text-left">Leeuwarden</p>
+                <p class="m-0 ml-5 pl-5 text-left">Friesland</p>
+                <p class="m-0 ml-5 pl-5 text-left"><strong>Telefoonnummer:</strong></p>
+                <p class="m-0 ml-5 pl-5 text-left">0612345678</p>
+            </div>
+            <div class="col">
+                
+                <img src="~/img/Hutspot.png" class="float-left mx-4" height="200" width="250" />
+                <p class="float-left mx-4">Hutspot met rookworst en spekjes</p>
+            </div>
+            <div class="col">
+                <img src="~/img/Tandoori.png" class="float-left mx-4" height="200" width="250" />
+                <p class="float-left mx-4">Kip tandoori</p>
+            </div>
+            <div class="col">
+                <img src="~/img/VegaErwt.png" class="float-left mx-4" height="200" width="250" />
+                <p class="float-left mx-4">Vegetarische erwtensoep</p>
+            </div>
+            
+        </div>
+    </div>
+</body>
