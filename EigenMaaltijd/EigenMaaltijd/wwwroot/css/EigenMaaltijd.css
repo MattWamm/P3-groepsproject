@@ -4,8 +4,8 @@
 
 #nav {
     background-color: #84d4ff;
-    justify-content: space-between;
     height: 80px;
+    justify-content:space-around;
 }
 
 a {
@@ -27,7 +27,7 @@ body {
     padding-right: 0;
     padding-left: 0;
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
 }
 
 #input_zoekbalk {
@@ -71,15 +71,15 @@ body {
 #container_index_3 {
     background-color: black;
     color: white;
-    border: solid black 5px;
     width: 80%;
+    border: solid black 3px;
 }
 
-.col {
+.col-lg-3 {
     width: 25%;
 }
 
-    .col > img:hover {
+    .col-lg-3 > img:hover {
         opacity: .3;
         transition: ease-in-out .3s;
         cursor: pointer;
@@ -87,7 +87,16 @@ body {
 
 .row {
     width: 100%;
+   
 }
+
+#img_maaltijd
+{
+    max-height:300px;
+    min-width: 100%;
+}
+
+
 
 
 
