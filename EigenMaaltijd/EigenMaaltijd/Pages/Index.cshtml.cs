@@ -17,6 +17,16 @@ namespace EigenMaaltijd.Pages
             _logger = logger;
         }
 
+
+        [BindProperty]
+        public User LogUser 
+        {
+            get
+            {
+                string cookie = Request.Cookies["keepLogin"];
+                return new UserRepository().getUserFromID(Convert.ToInt32(cookie));            
+            } 
+        }
         public void OnGet()
         {
 

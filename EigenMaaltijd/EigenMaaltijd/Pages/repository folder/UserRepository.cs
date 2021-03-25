@@ -72,7 +72,7 @@ namespace EigenMaaltijd.Pages
             if (UserID != 0)
                 rows = _db.Execute
                         (
-                        "INSERT INTO users (UserID, UserName, GeboorteDatum, Telefoon, Adres, Postcode) VALUES (userID, @username, @geboortedatum, @telefoon, @adres, @postcode)",
+                        "INSERT INTO users (UserID, UserName, GeboorteDatum, Telefoon, Adres, Postcode) VALUES (@userID, @username, @geboortedatum, @telefoon, @adres, @postcode)",
                         new
                         {
                             userID = UserID,

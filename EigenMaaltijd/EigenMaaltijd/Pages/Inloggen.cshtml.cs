@@ -20,10 +20,10 @@ namespace EigenMaaltijd.Pages
         [BindProperty]
         public RegisterLUser RegisterData { get; set; }
         
+
         public void OnGet()
         {
         }
-
 
         public IActionResult OnPostRegister()
         {
@@ -39,21 +39,29 @@ namespace EigenMaaltijd.Pages
                 };
                 Response.Cookies.Append("keepLogin",user.UserID.ToString(), cookieOptions);
             }
-
-
-
             return RedirectToPage("MijnProfiel");
         }
 
         public IActionResult OnPostLogin()
         {
 
+            User user = new UserRepository().Login(LoginData.Email, LoginData.Password);
 
-
-
+            if (user != null)
+            {
+                CookieOptions cookieOptions = new CookieOptions
+                {
+                    Expires = DateTime.Now.AddDays(1),
+                    IsEssential = true
+                };
+                Response.Cookies.Append("keepLogin", user.UserID.ToString(), cookieOptions);
+            }
             return RedirectToPage("MijnProfiel");
         }
 
 
+    }
+    public class tempData : Controller
+    {
     }
 }

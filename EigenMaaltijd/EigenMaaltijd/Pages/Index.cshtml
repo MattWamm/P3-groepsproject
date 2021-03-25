@@ -21,7 +21,14 @@
             <form class="form" id="form_zoekbalk">
                 <input class="form-control" type="search" placeholder="Zoeken naar gerecht..." id="input_zoekbalk">
             </form>
-            <a class="navbar" id="aanmelden" asp-page="/Inloggen">Aanmelden</a>
+            @if (Model.LogUser == null)
+            {
+                <a class="navbar" id="aanmelden" asp-page="/Inloggen">Aanmelden</a>
+            }
+            else
+            {
+                <a class="navbar" asp-page="/Index" asp-page-handler="">Afmelden</a>
+            }
 
             <a class="navbar" id="Poppetje_logo" asp-page="/MijnProfiel"><img src="~/img/Profiellogo.png" height="35" width="35" alt="Logo Mijn Profiel" id="Profiellogo" /></a>
 

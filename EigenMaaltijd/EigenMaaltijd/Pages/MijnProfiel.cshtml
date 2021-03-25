@@ -20,7 +20,7 @@
                 <input class="form-control" type="search" placeholder="Zoeken naar gerecht..." id="input_zoekbalk">
             </form>
             
-            <a class="navbar" asp-page="/Index">Afmelden</a>
+            <a class="navbar" asp-page="/Index" asp-page-handler="" >Afmelden</a>
         </nav>
     </div>
 
@@ -36,15 +36,14 @@
         </div>
         <div class="row">
             <div class="col-4">
-                
                 <img src="~/img/Placeholder.png" class="d-flex justify-content-start ml-5 pl-5" height="200" width="170" />
-                <h2 class="mt-1 ml-5 pl-5 text-left">Milou</h2>
+                <h2 class="mt-1 ml-5 pl-5 text-left">@Model.LogUser.UserName</h2>
                 <p class="mb-0 ml-5 pl-5 text-left"><strong>Adres:</strong></p>
-                <p class="mb-0 ml-5 pl-5 text-left">Rengerslaan 10</p>
-                <p class="m-0 ml-5 pl-5 text-left">Leeuwarden</p>
-                <p class="m-0 ml-5 pl-5 text-left">Friesland</p>
-                <p class="m-0 ml-5 pl-5 text-left"><strong>Telefoonnummer:</strong></p>
-                <p class="m-0 ml-5 pl-5 text-left">0612345678</p>
+                <p class="mb-0 ml-5 pl-5 text-left">@Model.LogUser.Adres</p>
+                <p class="m-0 ml-5 pl-5 text-left">@Model.LogUser.Adres</p>
+                <p class="m-0 ml-5 pl-5 text-left">@Model.LogUser.Adres</p>
+                <p class="m-0 ml-5 pl-5 text-left"><strong>Telefoonnummer</strong></p>
+                <p class="m-0 ml-5 pl-5 text-left">@Model.LogUser.Telefoon</p>
             </div>
             <div class="col">
                 
