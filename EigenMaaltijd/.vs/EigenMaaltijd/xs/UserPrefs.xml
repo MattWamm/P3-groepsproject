@@ -2,9 +2,8 @@
   <MonoDevelop.Ide.ItemProperties.EigenMaaltijd PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="EigenMaaltijd/Pages/Index.cshtml">
     <Files>
-      <File FileName="EigenMaaltijd/Pages/Index.cshtml" Line="38" Column="30" />
-      <File FileName="EigenMaaltijd/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" Line="67" Column="17" />
-      <File FileName="EigenMaaltijd/Program.cs" Line="16" Column="1" />
+      <File FileName="EigenMaaltijd/Pages/Index.cshtml" Line="73" Column="15" />
+      <File FileName="EigenMaaltijd/wwwroot/css/EigenMaaltijd.css" Line="57" Column="16" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,17 +11,13 @@
           <Node name="EigenMaaltijd" expanded="True">
             <Node name="EigenMaaltijd" expanded="True">
               <Node name="Pages" expanded="True">
-                <Node name="Index.cshtml" expanded="True" selected="True" />
+                <Node name="Index.cshtml" selected="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="img" expanded="True" />
                 <Node name="lib" expanded="True">
-                  <Node name="bootstrap" expanded="True">
-                    <Node name="dist" expanded="True">
-                      <Node name="css" expanded="True">
-                        <Node name="bootstrap.css" expanded="True" />
-                      </Node>
-                    </Node>
-                  </Node>
+                  <Node name="bootstrap" expanded="True" />
                 </Node>
               </Node>
             </Node>
