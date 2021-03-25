@@ -23,5 +23,11 @@ namespace EigenMaaltijd.Pages
                 LoginData = new UserRepository().getLoginUserFromID(Convert.ToInt32(cookie));
             }
         }
+
+        public IActionResult OnGetLogout()
+        {
+            Response.Cookies.Delete("keepLogin");
+            return RedirectToPage("Index");
+        }
     }
 }
