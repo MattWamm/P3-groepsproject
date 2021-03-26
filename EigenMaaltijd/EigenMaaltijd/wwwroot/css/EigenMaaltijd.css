@@ -35,7 +35,7 @@ body {
 }
 
 #Testlogo:hover {
-    transform: scale(1.05);
+    transition: ease-in-out .3s;
 }
 
 #btn_1 {
@@ -69,7 +69,7 @@ body {
 
 
 #container_index_3 {
-    background-color: black;
+    background-color: transparent;
     color: white;
     width: 80%;
     border: solid black 3px;
@@ -77,16 +77,13 @@ body {
 
 .col-lg-3 {
     width: 25%;
+    max-height:100%;
 }
 
-    .col-lg-3 > img:hover {
-        opacity: .3;
-        transition: ease-in-out .3s;
-        cursor: pointer;
-    }
 
 .row {
     width: 100%;
+    height:100%
    
 }
 
@@ -95,6 +92,29 @@ body {
     max-height:300px;
     min-width: 100%;
 }
+
+.hover-container {
+    position: relative;
+}
+
+.hover-content {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgb(0, 0, 0, 0.7);
+    text-align:center;
+}
+
+
+.hover-container:hover > .hover-content {
+    opacity: 1;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+}
+
+
 
 
 
