@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Peter Jongman\\Desktop\\Eigenmaaltijd\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj": {}
+    "C:\\Users\\matti\\Desktop\\login backup\\EigenMaaltijd\\EigenMaaltijd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Peter Jongman\\Desktop\\Eigenmaaltijd\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj": {
+    "C:\\Users\\matti\\Desktop\\login backup\\EigenMaaltijd\\EigenMaaltijd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Peter Jongman\\Desktop\\Eigenmaaltijd\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj",
+        "projectUniqueName": "C:\\Users\\matti\\Desktop\\login backup\\EigenMaaltijd\\EigenMaaltijd.csproj",
         "projectName": "EigenMaaltijd",
-        "projectPath": "C:\\Users\\Peter Jongman\\Desktop\\Eigenmaaltijd\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj",
-        "packagesPath": "C:\\Users\\Peter Jongman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Peter Jongman\\Desktop\\Eigenmaaltijd\\EigenMaaltijd\\EigenMaaltijd\\obj\\",
+        "projectPath": "C:\\Users\\matti\\Desktop\\login backup\\EigenMaaltijd\\EigenMaaltijd.csproj",
+        "packagesPath": "C:\\Users\\matti\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\matti\\Desktop\\login backup\\EigenMaaltijd\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\Microsoft\\Xamarin\\NuGet"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Peter Jongman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\matti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -83,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

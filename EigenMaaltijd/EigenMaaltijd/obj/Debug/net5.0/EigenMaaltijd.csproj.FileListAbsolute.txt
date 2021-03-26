@@ -310,14 +310,3 @@ C:\Users\matti\Desktop\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\ne
 C:\Users\matti\Desktop\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\ref\EigenMaaltijd.dll
 C:\Users\matti\Desktop\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.pdb
 C:\Users\matti\Desktop\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.genruntimeconfig.cache
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.csprojAssemblyReference.cache
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.AssemblyInfoInputs.cache
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.AssemblyInfo.cs
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.csproj.CoreCompileInputs.cache
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.RazorAssemblyInfo.cache
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.RazorAssemblyInfo.cs
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\ref\EigenMaaltijd.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.pdb
