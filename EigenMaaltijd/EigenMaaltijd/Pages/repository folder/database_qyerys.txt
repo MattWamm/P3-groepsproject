@@ -34,11 +34,11 @@ CREATE TABLE `maaltijden` (
 
 CREATE TABLE `users` (
   `UserID` INT NOT NULL,
-  `UserName` VARCHAR(100) NOT NULL,
+  `UserName` VARCHAR(100) DEFAULT NULL,
   `GeboorteDatum` DATE DEFAULT NULL,
   `Telefoon` VARCHAR(11) DEFAULT NULL,
-  `Adres` VARCHAR(100) NOT NULL,
-  `Postcode` VARCHAR(6) NOT NULL,
+  `Adres` VARCHAR(100) DEFAULT NULL,
+  `Postcode` VARCHAR(6) DEFAULT NULL,
   PRIMARY KEY (`UserID`)
 );
 
