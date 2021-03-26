@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kveB56EcI846wshPVtMYh9ONOBPqtFNvLrIkG+PzJTZc/c2lCwaW0OMr4H2IS/yfHLGbD51JFExepIxcpyCUtg==",
+  "dgSpecHash": "v05rgHf+8a9lSSoF5crg+dXY9cpUdqKmmA0t7FeBzt9FCgxNcrkT095MVf2Vz7hio3O0jNbJ+32OMYL3W+bM5w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\matti\\Desktop\\login backup\\EigenMaaltijd\\EigenMaaltijd.csproj",
+  "projectFilePath": "C:\\Users\\matti\\Desktop\\P3-groepsproject\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\matti\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\matti\\.nuget\\packages\\carter\\5.2.0\\carter.5.2.0.nupkg.sha512",
