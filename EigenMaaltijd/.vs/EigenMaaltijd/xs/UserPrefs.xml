@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{2993E816-CFE5-4FB9-8690-34A7EF2D9E0B}|Default">
+  <MonoDevelop.Ide.ItemProperties.EigenMaaltijd PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="EigenMaaltijd/Pages/Index.cshtml">
+    <Files>
+      <File FileName="EigenMaaltijd/Pages/Index.cshtml" Line="73" Column="15" />
+      <File FileName="EigenMaaltijd/wwwroot/css/EigenMaaltijd.css" Line="57" Column="16" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="EigenMaaltijd" expanded="True">
+            <Node name="EigenMaaltijd" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="Index.cshtml" selected="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="img" expanded="True" />
+                <Node name="lib" expanded="True">
+                  <Node name="bootstrap" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
