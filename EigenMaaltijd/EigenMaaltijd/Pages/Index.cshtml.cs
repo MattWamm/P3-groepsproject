@@ -24,9 +24,10 @@ namespace EigenMaaltijd.Pages
 
         }
 
-        public void OnPostSearch()
+        public IActionResult OnPostSearch()
         {
-            new MealRepository().GetAllMeals();
+            var Maaltijden =  new MealRepository().GetAllMeals();
+            return RedirectToPage("Maaltijden");
        
         }
     }
