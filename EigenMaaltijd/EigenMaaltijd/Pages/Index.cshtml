@@ -18,7 +18,7 @@
         <nav class="navbar navbar-expand" id="nav">
             <a class="navbar-brand" asp-page="/Index"><img src="~/img/Testlogo.png" height="35" width="140" alt="Testlogo EigenMaaltijd" id="Testlogo" /></a>
 
-            <form class="form" id="form_zoekbalk">
+            <form class="form" id="form_zoekbalk" method="post" asp-page-handler="Search">
                 <input class="form-control" type="search" placeholder="Zoeken naar gerecht..." id="input_zoekbalk">
             </form>
             <a class="navbar" id="aanmelden" asp-page="/Inloggen"><img src="~/img/Profiellogo.png" height="20" width="20" alt="Logo Mijn Profiel" id="Profiellogo" /> &nbsp Aanmelden</a>
