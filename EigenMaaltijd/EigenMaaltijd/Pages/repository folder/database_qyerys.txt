@@ -15,7 +15,7 @@ CREATE TABLE `favourite` (
 );
 
 CREATE TABLE `loginusers` (
-  `UserID` INT NOT NULL,
+  `UserID` INT NOT NULL AUTO_INCREMENT,
   `Password` VARCHAR(100) NOT NULL,
   `Email` VARCHAR(100) UNIQUE NOT NULL,
   PRIMARY KEY (`UserID`)
@@ -33,7 +33,7 @@ CREATE TABLE `maaltijden` (
 );
 
 CREATE TABLE `users` (
-  `UserID` INT NOT NULL AUTO_INCREMENT,
+  `UserID` INT NOT NULL,
   `UserName` VARCHAR(100) NOT NULL,
   `GeboorteDatum` DATE DEFAULT NULL,
   `Telefoon` VARCHAR(11) DEFAULT NULL,
