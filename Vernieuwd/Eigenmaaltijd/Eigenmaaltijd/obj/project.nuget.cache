@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8J46Kbre8CZ5vYF+HieBRr5B7hff83iM4K/pdW+Bd2iKIVrg/ye1Ha2yH/JQBL3mva1sXE6NpokxEDRML9FbKg==",
+  "dgSpecHash": "HWpLXNYAIC3yMjy2kvkkd5EQcpgr1IaFe8awdvCZWkomC9RY1WaSJ8qJGtwMhnB0xQc3VnNV2yId3ayCOjKX6g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Peter Jongman\\Desktop\\Eigenmaaltijd\\Vernieuwd\\Eigenmaaltijd\\Eigenmaaltijd\\Eigenmaaltijd.csproj",
+  "projectFilePath": "C:\\Users\\Peter Jongman\\Desktop\\Eigenmaaltijd\\Back up\\Vernieuwd\\Eigenmaaltijd\\Eigenmaaltijd\\Eigenmaaltijd.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Peter Jongman\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.12\\microsoft.netcore.app.host.win-x64.3.1.12.nupkg.sha512"
   ],
