@@ -17,7 +17,7 @@ namespace EigenMaaltijd.Pages
             _logger = logger;
         }
 
-        
+       
 
         public void OnGet()
         {
@@ -26,6 +26,8 @@ namespace EigenMaaltijd.Pages
 
         public void OnPostSearch()
         {
+            new MealRepository().GetAllMeals();
+       
         }
     }
 }

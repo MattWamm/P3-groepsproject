@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ninob\\Documents\\GitHub\\P3-groepsproject\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj": {}
+    "/Users/ninoblankevoort/Documents/GitHub/P3-groepsproject/EigenMaaltijd/EigenMaaltijd/EigenMaaltijd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ninob\\Documents\\GitHub\\P3-groepsproject\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj": {
+    "/Users/ninoblankevoort/Documents/GitHub/P3-groepsproject/EigenMaaltijd/EigenMaaltijd/EigenMaaltijd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ninob\\Documents\\GitHub\\P3-groepsproject\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj",
+        "projectUniqueName": "/Users/ninoblankevoort/Documents/GitHub/P3-groepsproject/EigenMaaltijd/EigenMaaltijd/EigenMaaltijd.csproj",
         "projectName": "EigenMaaltijd",
-        "projectPath": "C:\\Users\\ninob\\Documents\\GitHub\\P3-groepsproject\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj",
-        "packagesPath": "C:\\Users\\ninob\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ninob\\Documents\\GitHub\\P3-groepsproject\\EigenMaaltijd\\EigenMaaltijd\\obj\\",
+        "projectPath": "/Users/ninoblankevoort/Documents/GitHub/P3-groepsproject/EigenMaaltijd/EigenMaaltijd/EigenMaaltijd.csproj",
+        "packagesPath": "/Users/ninoblankevoort/.nuget/packages/",
+        "outputPath": "/Users/ninoblankevoort/Documents/GitHub/P3-groepsproject/EigenMaaltijd/EigenMaaltijd/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ninob\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/ninoblankevoort/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -83,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
         }
       }
     }
