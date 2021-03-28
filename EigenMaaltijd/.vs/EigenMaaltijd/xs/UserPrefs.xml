@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{2993E816-CFE5-4FB9-8690-34A7EF2D9E0B}|Default">
   <MonoDevelop.Ide.ItemProperties.EigenMaaltijd PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="EigenMaaltijd/Pages/repository folder/MealRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EigenMaaltijd/Pages/Index.cshtml.cs">
     <Files>
-      <File FileName="EigenMaaltijd/Pages/Index.cshtml" Line="73" Column="1" />
-      <File FileName="EigenMaaltijd/wwwroot/css/EigenMaaltijd.css" Line="57" Column="16" />
-      <File FileName="EigenMaaltijd/Pages/Index.cshtml.cs" Line="19" Column="1" />
-      <File FileName="EigenMaaltijd/Pages/repository folder/MealRepository.cs" Line="46" Column="42" />
+      <File FileName="EigenMaaltijd/Pages/Index.cshtml.cs" Line="29" Column="49" />
+      <File FileName="EigenMaaltijd/Pages/repository folder/MealRepository.cs" Line="79" Column="33" />
+      <File FileName="EigenMaaltijd/Pages/Maaltijden.cshtml" Line="35" Column="36" />
+      <File FileName="EigenMaaltijd/Pages/Index.cshtml" Line="130" Column="19" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,10 +13,11 @@
           <Node name="EigenMaaltijd" expanded="True">
             <Node name="EigenMaaltijd" expanded="True">
               <Node name="Pages" expanded="True">
-                <Node name="repository folder" expanded="True">
-                  <Node name="MealRepository.cs" selected="True" />
+                <Node name="repository folder" expanded="True" />
+                <Node name="Index.cshtml" expanded="True">
+                  <Node name="Index.cshtml.cs" selected="True" />
                 </Node>
-                <Node name="Index.cshtml" expanded="True" />
+                <Node name="Inloggen.cshtml" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
                 <Node name="css" expanded="True" />

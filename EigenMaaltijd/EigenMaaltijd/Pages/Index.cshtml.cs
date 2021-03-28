@@ -17,8 +17,7 @@ namespace EigenMaaltijd.Pages
             _logger = logger;
         }
 
-       
-
+        
         public void OnGet()
         {
 
@@ -26,7 +25,7 @@ namespace EigenMaaltijd.Pages
 
         public IActionResult OnPostSearch()
         {
-            var Maaltijden =  new MealRepository().GetAllMeals();
+            var Maaltijden =  new MealRepository().GetMealsFromUserID(0);
             return RedirectToPage("Maaltijden");
        
         }
