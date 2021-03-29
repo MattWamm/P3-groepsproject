@@ -130,7 +130,7 @@
                 <a class="navbar" asp-page-handler="Logout">Afmelden</a>
             }
 
-            <a class="navbar" id="Poppetje_logo" asp-page="/MijnProfiel"><img src="~/img/Profiellogo.png" height="35" width="35" alt="Logo Mijn Profiel" id="Profiellogo" /></a>
+            <a class="navbar" id="Poppetje_logo" asp-page-handler="MijnProfiel"><img src="~/img/Profiellogo.png" height="35" width="35" alt="Logo Mijn Profiel" id="Profiellogo" /></a>
 
 
         </nav>
@@ -225,13 +225,9 @@
                         <label for="star1" title="text">1 star</label>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
-
-
-
                 <div>
                     <script>
                         document.querySelector(".img-fluid").addEventListener("click", function () {

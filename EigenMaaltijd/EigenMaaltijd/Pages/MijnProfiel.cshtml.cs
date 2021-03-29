@@ -10,12 +10,11 @@ namespace EigenMaaltijd.Pages
     public class Index2Model : PageModel
     {
         [BindProperty]
-        public User LogUser { get; set; }
-        public LoginUser LoginData {get;set;}
+        public User LogUser {get; set;}
+        public LoginUser LoginData { get; set; }
 
         public void OnGet()
         {
-
             string cookie = Request.Cookies["keepLogin"];
             if (cookie != null)
             {
