@@ -34,6 +34,15 @@ namespace EigenMaaltijd.Pages
             return RedirectToPage("Index");
         }
 
+        public IActionResult OnGetMijnProfiel()
+        {
+            if (LogUser == null)
+                return RedirectToPage("Inloggen");
+
+            return RedirectToPage("MijnProfiel");        
+        }
+
+
 
         public void OnGet()
         {
