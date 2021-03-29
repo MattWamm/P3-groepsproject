@@ -1,5 +1,5 @@
 ﻿@page
-@model WebApplication1.Pages.EditProfileModel
+@model EigenMaaltijd.Pages.EditProfileModel
 @{
 }
 
@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="container-fluid" id="container_MijnProfiel_1">
+    <div class="container-fluid" id="container_EditProfile_1">
         <nav class="navbar navbar-expand" id="nav">
             <a class="navbar-brand" asp-page="/Index"><img src="~/img/Testlogo.png" height="35" width="140" alt="Testlogo EigenMaaltijd" id="Testlogo" /></a>
 
@@ -27,9 +27,12 @@
         <div class="row">
             <div class="col-md-4 border-right">
                 <div class="d-flex flex-column align-items-center text-center p-3 py-5">
-                    <img class="rounded-circle mt-5" src="/img/Placeholder.png" height="200" width="170">
-                    <span class="font-weight-bold">Username</span>
-                    <span class="text-black-50">E-mail</span><span> </span>
+                    <img class="mt-5" src="/img/Placeholder.png" height="200" width="170">
+                    <label class="btn btn-primary mt-2">
+                        Foto wijzigen<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                    </label>
+                    <span class="font-weight-bold">@Model.UserData.UserName</span>
+                    <span class="text-black-50">@Model.LoginData.Email</span>
                 </div>
             </div>
             <div class="col-md-8">
@@ -50,28 +53,28 @@
                     <div class="row mt-3">
                         <div class="col-md-12">
                             <label class="labels">Telefoonnummer</label>
-                            <input type="text" class="form-control" placeholder="voer telefoonnummer in" value="">
+                            <input asp-for="UserData.Telefoon" class="form-control" placeholder="voer telefoonnummer in" value="">
                         </div>
                         <div class="col-md-12">
                             <label class="labels">Adres</label>
-                            <input type="text" class="form-control" placeholder="voer adres in" value="">
+                            <input asp-for="UserData.Adres" class="form-control" placeholder="voer adres in" value="">
                         </div>
                         <div class="col-md-12">
                             <label class="labels">Email</label>
-                            <input type="text" class="form-control" placeholder="voer email in" value="">
+                            <input asp-for="LoginData.Email" class="form-control" placeholder="voer email in" value="">
                         </div>
                     </div>
                     <div class="row mt-3">
                         <div class="col-md-6">
-                            <label class="labels">Stad</label>
-                            <input type="text" class="form-control" placeholder="stad" value="">
+                            <label class="labels">Plaatsnaam</label>
+                            <input type="text" class="form-control" placeholder="plaatsnaam" value="">
                         </div>
                         <div class="col-md-6">
                             <label class="labels">Postcode</label>
-                            <input type="text" class="form-control" value="" placeholder="1234AB">
+                            <input asp-for="UserData.Postcode" class="form-control" value="" placeholder="1234AB">
                         </div>
                     </div>
-                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Profiel opslaan</button></div>
+                    <div class="mt-5 text-center"><button class="btn btn-primary" type="button">Profiel opslaan</button></div>
                 </div>
             </div>
         </div>
