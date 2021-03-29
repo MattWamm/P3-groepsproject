@@ -1,0 +1,79 @@
+﻿@page
+@model WebApplication1.Pages.EditProfileModel
+@{
+}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/EigenMaaltijd.css">
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+    <div class="container-fluid" id="container_MijnProfiel_1">
+        <nav class="navbar navbar-expand" id="nav">
+            <a class="navbar-brand" asp-page="/Index"><img src="~/img/Testlogo.png" height="35" width="140" alt="Testlogo EigenMaaltijd" id="Testlogo" /></a>
+
+            <form class="form" id="form_zoekbalk">
+                <input class="form-control" type="search" placeholder="Zoeken naar gerecht..." id="input_zoekbalk">
+            </form>
+
+            <a class="navbar" asp-page-handler="Logout">Afmelden</a>
+        </nav>
+    </div>
+    <div class="container rounded bg-white mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-4 border-right">
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+                    <img class="rounded-circle mt-5" src="/img/Placeholder.png" height="200" width="170">
+                    <span class="font-weight-bold">Username</span>
+                    <span class="text-black-50">E-mail</span><span> </span>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="text-right">Profielinstellingen</h4>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-6">
+                            <label class="labels">Naam</label>
+                            <input type="text" class="form-control" action="" placeholder="voornaam" value="">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="labels">Achternaam</label>
+                            <input type="text" class="form-control" value="" placeholder="achternaam">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <label class="labels">Telefoonnummer</label>
+                            <input type="text" class="form-control" placeholder="voer telefoonnummer in" value="">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="labels">Adres</label>
+                            <input type="text" class="form-control" placeholder="voer adres in" value="">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="labels">Email</label>
+                            <input type="text" class="form-control" placeholder="voer email in" value="">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <label class="labels">Stad</label>
+                            <input type="text" class="form-control" placeholder="stad" value="">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="labels">Postcode</label>
+                            <input type="text" class="form-control" value="" placeholder="1234AB">
+                        </div>
+                    </div>
+                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Profiel opslaan</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

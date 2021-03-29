@@ -15,7 +15,7 @@ namespace EigenMaaltijd.Pages
                                                     Port=3306;
                                                     Database=Eigenmaaltijd;
                                                     Uid=root;
-                                                    Pwd=Interstellar123;");
+                                                    Pwd=Weg123Fiets;");
             return _db;
         }
 
