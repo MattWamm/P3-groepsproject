@@ -10,43 +10,28 @@ namespace EigenMaaltijd.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
 
-        public IndexModel(ILogger<IndexModel> logger)
-        {
-            _logger = logger;
-        }
-
-
-        [BindProperty]
-        public User LogUser 
-        {
-            get
+        private readonly MealRepository mealRepository;
+        public IEnumerable<Meal> Meals
+              {
+                get
             {
-                string cookie = Request.Cookies["keepLogin"];
-                return new UserRepository().getUserFromID(Convert.ToInt32(cookie));            
-            } 
+                    return new MealRepository().GetAllMeals();
+                }
         }
 
-        public IActionResult OnGetLogout()
-        {
-            Response.Cookies.Delete("keepLogin");
-            return RedirectToPage("Index");
-        }
+        [BindProperty(SupportsGet = true)]
+        public string SearchTerm { get; set; }
 
-        public IActionResult OnGetMijnProfiel()
-        {
-            if (LogUser == null)
-                return RedirectToPage("Inloggen");
-
-            return RedirectToPage("MijnProfiel");        
-        }
-
-
-
+     
         public void OnGet()
         {
+           
+        }
 
+        public void OnGetSearch()
+        {
+          mealRepository.Search(SearchTerm);
         }
     }
 }

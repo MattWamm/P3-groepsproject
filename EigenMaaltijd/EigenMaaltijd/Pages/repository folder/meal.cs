@@ -7,6 +7,7 @@ namespace EigenMaaltijd.Pages
 {
     public class Meal
     {
+
         public int MealID { get; set; }
         public int UserID { get; set; }
         public string Name { get; set; }

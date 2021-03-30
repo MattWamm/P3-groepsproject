@@ -12,6 +12,8 @@ namespace EigenMaaltijd.Pages
         //get meal information with bindpropperty and logged user information.
 
         //add a meal to the list
+
+
         public int AddMeal(Meal meal)
         {
             using IDbConnection _db = Connect();
@@ -138,6 +140,22 @@ namespace EigenMaaltijd.Pages
             return 0;
         }
 
+
+        private List<Meal> _mealRepository = new List<Meal>();
+
+          
+
+        public IEnumerable<Meal> Search(string searchTerm)
+        {
+            if (string.IsNullOrEmpty(searchTerm))
+            {
+                return _mealRepository.Where(m => m.Name.Contains(searchTerm) ||
+                                               m.PortionSize.Contains(searchTerm)).ToList();
+            }
+                return _mealRepository.ToList();
+
+
+        }
 
 
     }
