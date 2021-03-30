@@ -10,24 +10,28 @@ namespace EigenMaaltijd.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
 
-        public IndexModel(ILogger<IndexModel> logger)
-        {
-            _logger = logger;
+        private readonly MealRepository mealRepository;
+        public IEnumerable<Meal> Meals
+              {
+                get
+            {
+                    return new MealRepository().GetAllMeals();
+                }
         }
 
-        
+        [BindProperty(SupportsGet = true)]
+        public string SearchTerm { get; set; }
+
+     
         public void OnGet()
         {
-
+           
         }
 
-        public IActionResult OnPostSearch()
+        public void OnGetSearch()
         {
-            var Maaltijden =  new MealRepository().GetMealsFromUserID(0);
-            return RedirectToPage("Maaltijden");
-       
+          mealRepository.Search(SearchTerm);
         }
     }
 }
