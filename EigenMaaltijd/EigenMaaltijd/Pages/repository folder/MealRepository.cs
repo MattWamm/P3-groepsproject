@@ -141,18 +141,23 @@ namespace EigenMaaltijd.Pages
         }
 
 
-        private List<Meal> _mealRepository = new List<Meal>();
 
           
 
-        public IEnumerable<Meal> Search(string searchTerm)
+        public List<Meal> Search(string searchTerm)
         {
-            if (string.IsNullOrEmpty(searchTerm))
+        
+           List<Meal> _mealRepository = new MealRepository().GetAllMeals();
+
+            if (!string.IsNullOrEmpty(searchTerm))
             {
                 return _mealRepository.Where(m => m.Name.Contains(searchTerm) ||
                                                m.PortionSize.Contains(searchTerm)).ToList();
             }
-                return _mealRepository.ToList();
+            else
+            {
+                return _mealRepository;
+            }
 
 
         }

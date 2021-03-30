@@ -10,15 +10,13 @@ namespace EigenMaaltijd.Pages
 {
     public class IndexModel : PageModel
     {
-
-        private readonly MealRepository mealRepository;
-        public IEnumerable<Meal> Meals
-              {
-                get
+        public List<Meal> Meals { 
+            get
             {
-                    return new MealRepository().GetAllMeals();
-                }
-        }
+                return new MealRepository().Search(SearchTerm);
+            }
+            }
+          
 
         [BindProperty(SupportsGet = true)]
         public string SearchTerm { get; set; }
@@ -27,11 +25,12 @@ namespace EigenMaaltijd.Pages
         public void OnGet()
         {
            
+
         }
 
-        public void OnGetSearch()
+        public void OnPostSearch()
         {
-          mealRepository.Search(SearchTerm);
+         new MealRepository().Search(SearchTerm);
         }
     }
 }

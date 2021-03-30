@@ -18,7 +18,7 @@
         <nav class="navbar navbar-expand" id="nav">
             <a class="navbar-brand" asp-page="/Index"><img src="~/img/Testlogo.png" height="35" width="140" alt="Testlogo EigenMaaltijd" id="Testlogo" /></a>
 
-            <form class="form" id="form_zoekbalk" method="get" asp-page-handler="Search">
+            <form class="form" id="form_zoekbalk" method="post" asp-page-handler="Search">
                 <input class="form-control" type="search" placeholder="Zoeken naar gerecht..." id="input_zoekbalk" asp-for="SearchTerm">
             </form>
             <a class="navbar" id="aanmelden" asp-page="/Inloggen"><img src="~/img/Profiellogo.png" height="20" width="20" alt="Logo Mijn Profiel" id="Profiellogo" /> &nbsp Aanmelden</a>
@@ -31,16 +31,19 @@
     <div class="container-fluid" id="container_test">
 
 
-
-        @foreach (var m in Model.Meals)
+        @if (Model.Meals != null)
         {
-            <ul>
-                <li>
-                    @m.Name
+            @foreach (var m in Model.Meals)
+            {
+                <ul>
+                    <li>
+                        @m.Name
 
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            }
         }
+
     </div>
 
 
