@@ -13,9 +13,13 @@ namespace EigenMaaltijd.Pages
         [BindProperty]
         public Meal meal { get; set; }
 
-        public void OnGet()
+        public IActionResult OnGet()
         {
-
+            if (LogUser == null)
+            {
+                return RedirectToPage("Inloggen");
+            }
+            return new PageResult();
         }
 
         public void Ingredients()
