@@ -376,3 +376,5 @@ C:\Users\matti\Desktop\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\ne
 C:\Users\matti\Desktop\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\ref\EigenMaaltijd.dll
 C:\Users\matti\Desktop\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.pdb
 C:\Users\matti\Desktop\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.genruntimeconfig.cache
+C:\Users\ninob\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\EditProfile.cshtml.g.cs
+C:\Users\ninob\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\PlaatsGerecht.cshtml.g.cs
