@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hW+MFVWpY9dfB/K6wYC7jDBkceJAaiEHV+nBsJbVlrQpU60aM7hihQIlk/iVJz/Wd2Y1+UPBl5NU46zs59gvPw==",
+  "dgSpecHash": "vBjIIeZtbas7pt7T5bi1Ina/5oJ8rwfRxORS6rUite6kp8cP+u4AOV8O1IWmDIiLVYptmh+2G/BguBjkr/jEtA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ninob\\OneDrive\\Bureaublad\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj",
+  "projectFilePath": "C:\\Users\\ninob\\Documents\\GitHub\\P3-groepsproject\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ninob\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\ninob\\.nuget\\packages\\carter\\5.2.0\\carter.5.2.0.nupkg.sha512",

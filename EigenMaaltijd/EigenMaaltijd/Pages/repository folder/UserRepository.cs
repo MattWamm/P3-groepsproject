@@ -37,41 +37,52 @@ namespace EigenMaaltijd.Pages
         //get input in the model as a bindproperty and take that as input.
         // inserts a user and loginuser;
         // returns: UserID
-        public int Register(User user, LoginUser loginUser)
+        public int Register(User user, RegisterLUser loginUser)
         {
             using IDbConnection _db = Connect();
             int UserID = 0;
                 int rows = 0;
+            if (loginUser.Password != loginUser.PassConfirm)
+                return 0;
+
+            try
+            {
                 rows = _db.Execute
-                    (
-                    "INSERT INTO users (UserName, GeboorteDatum, Telefoon, Adres, Postcode) VALUES (@username, @geboortedatum, @telefoon, @adres, @postcode)",
-                    new 
-                    { 
-                        username = user.UserName,
-                        geboortedatum = user.GeboorteDatum,
-                        telefoon = user.Telefoon,
-                        adres = user.Adres,
-                        postcode = user.Postcode
-                    });
-
-                        if (rows == 1)
-                        {
-                        UserID = _db.QuerySingleOrDefault<int>
-                            (
-                            "SELECT UserID FROM users WHERE UserID = LAST_INSERT_ID()"
-                            );
-                        }
-
-            if (UserID != 0)
-            rows = _db.Execute
                 (
                 "INSERT INTO loginusers (UserID, Password, Email) VALUES (@userID, @password, @email)",
-                new 
-                { 
+                new
+                {
                     password = loginUser.Password,
                     email = loginUser.Email,
                     userID = UserID
                 });
+            } catch
+            {
+                return 0;
+            }
+
+            if (rows == 1)
+                        {
+                        UserID = _db.QuerySingleOrDefault<int>
+                            (
+                            "SELECT UserID FROM loginusers WHERE UserID = LAST_INSERT_ID()"
+                            );
+                        }
+
+            if (UserID != 0)
+                rows = _db.Execute
+                        (
+                        "INSERT INTO users (UserID, UserName, GeboorteDatum, Telefoon, Adres, Postcode) VALUES (@userID, @username, @geboortedatum, @telefoon, @adres, @postcode)",
+                        new
+                        {
+                            userID = UserID,
+                            username = user.UserName,
+                            geboortedatum = user.GeboorteDatum,
+                            telefoon = user.Telefoon,
+                            adres = user.Adres,
+                            postcode = user.Postcode
+                        });
+
             return UserID;
         }
         //returns 1 user class

@@ -28,4 +28,20 @@ namespace EigenMaaltijd.Pages
         public string Password { get; set; }
     }
 
+    public class RegisterLUser
+    {
+        public int UserID { get; set; }
+
+        [EmailAddress, Required]
+        public string Email { get; set; }
+
+        [MinLength(8), Required]
+        public string Password { get; set; }
+
+        [MinLength(8), Required]
+        public string PassConfirm { get; set; }
+    }
+
+
+
 }

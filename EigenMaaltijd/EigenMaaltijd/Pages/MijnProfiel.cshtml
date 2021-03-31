@@ -20,46 +20,46 @@
                 <input class="form-control" type="search" placeholder="Zoeken naar gerecht..." id="input_zoekbalk">
             </form>
             
-            <a class="navbar" asp-page="/Index">Afmelden</a>
+            <a class="navbar" asp-page-handler="Logout">Afmelden</a>
         </nav>
     </div>
 
 
     <div class="container-fluid pt-5 mt-5 ml-0" id="container_Mijnprofiel_2">
         <div class="row">
-            <div class="col-4">
-                <h1 class="ml-5 pl-5 text-left"><u>Mijn account</u></h1>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3 order-lg-1">
+                <h1 class="ml-5 pl-5 text-lg-left text-md-center text-sm-center">Mijn account</h1>
+                <img src="~/img/Line.png" class="d-lg-flex ml-5 pl-4 justify-content-md-center justify-content-sm-center mt-lg-0" style="width: 350px" />
             </div>
-            <div class="col">
-                <h2 class="text-left mb-5">Favoriete gerechten:</h2>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3 order-lg-3">
+                <img src="~/img/Placeholder.png" class="d-lg-flex justify-content-sm-center justify-content-md-center ml-5 pl-5" height="200" width="170" />
+                <h2 class="mt-1 ml-5 pl-5 text-lg-left text-md-center text-sm-center">@Model.LogUser.UserName</h2>
+                <p class="mb-0 ml-5 pl-5 text-lg-left text-md-center text-sm-center"><strong>Adres:</strong></p>
+                <p class="mb-0 ml-5 pl-5 text-lg-left text-md-center text-sm-center">@Model.LogUser.Adres</p>
+                <p class="m-0 ml-5 pl-5 text-lg-left text-md-center text-sm-center">@Model.LogUser.Adres</p>
+                <p class="m-0 ml-5 pl-5 text-lg-left text-md-center text-sm-center">@Model.LogUser.Adres</p>
+                <p class="m-0 ml-5 pl-5 text-lg-left text-md-center text-sm-center"><strong>Telefoonnummer</strong></p>
+                <p class="m-0 ml-5 pl-5 text-lg-left text-md-center text-sm-center">@Model.LogUser.Telefoon</p>
+                <div class="mb-5 ml-5 pl-5 text-lg-left justify-content-sm-center justify-content-md-center">
+                    <a href="/EditProfile" class="btn btn-primary" style="padding: 5px" type="button">Edit Profiel</a>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-4">
-                
-                <img src="~/img/Placeholder.png" class="d-flex justify-content-start ml-5 pl-5" height="200" width="170" />
-                <h2 class="mt-1 ml-5 pl-5 text-left">Milou</h2>
-                <p class="mb-0 ml-5 pl-5 text-left"><strong>Adres:</strong></p>
-                <p class="mb-0 ml-5 pl-5 text-left">Rengerslaan 10</p>
-                <p class="m-0 ml-5 pl-5 text-left">Leeuwarden</p>
-                <p class="m-0 ml-5 pl-5 text-left">Friesland</p>
-                <p class="m-0 ml-5 pl-5 text-left"><strong>Telefoonnummer:</strong></p>
-                <p class="m-0 ml-5 pl-5 text-left">0612345678</p>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-9 order-lg-2" style="height: 100px">
+                <h2 class="text-lg-left text-md-left ml-md-4 mb-5 ">Favoriete gerechten:</h2>
             </div>
-            <div class="col">
-                
-                <img src="~/img/Hutspot.png" class="float-left mx-4" height="200" width="250" />
-                <p class="float-left mx-4">Hutspot met rookworst en spekjes</p>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-3 order-lg-4">
+                <img src="~/img/Hutspot.png" class="justify-content-md-center justify-content-sm-center mx-4 " height="200" width="250" />
+                <p class="text-md-center mx-3 ">Hutspot met rookworst en spekjes</p>
             </div>
-            <div class="col">
-                <img src="~/img/Tandoori.png" class="float-left mx-4" height="200" width="250" />
-                <p class="float-left mx-4">Kip tandoori</p>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-3 order-lg-5">
+                <img src="~/img/Tandoori.png" class="justify-content-md-center justify-content-sm-center mx-4 " height="200" width="250" />
+                <p class="text-md-center mx-3 ">Kip tandoori</p>
             </div>
-            <div class="col">
-                <img src="~/img/VegaErwt.png" class="float-left mx-4" height="200" width="250" />
-                <p class="float-left mx-4">Vegetarische erwtensoep</p>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-3 order-lg-6">
+                <img src="~/img/VegaErwt.png" class="justify-content-md-center justify-content-sm-center mx-4" height="200" width="250" />
+                <p class="text-md-center ml-3 ">Vegetarische erwtensoep</p>
             </div>
-            
+
         </div>
     </div>
 </body>

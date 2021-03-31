@@ -1,13 +1,13 @@
 ﻿@page
 @model EigenMaaltijd.Pages.InloggenModel
 @{
+
 }
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="stylesheet" href="~/css/inloggen.css">
     <link rel="stylesheet" href="~/css/EigenMaaltijd.css">
-
+    <link rel="stylesheet" href="~/css/inloggen.css">
     <script src="lib/jquery/dist/jquery.js"></script>
     <title></title>
 </head>
@@ -21,87 +21,56 @@
             <form class="form" id="form_zoekbalk">
                 <input class="form-control" type="search" placeholder="Zoeken naar gerecht..." id="input_zoekbalk">
             </form>
-
-            <a class="navbar" asp-page="/Inloggen">Aanmelden</a>
         </nav>
     </div>
 
+    @* login *@
 
     <div class="split left">
         <form method="post">
             <h1 class="head">Inloggen</h1>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Email" />
+                <input asp-for="LoginData.Email" class="form-control" id="email" placeholder="Email" />
             </div>
-
             <div class="form-group">
                 <label for="wachtwoord">Wachtwoord</label>
-                <input type="email" class="form-control" id="Wachtwoord" placeholder="Wachtwoord" />
+                <input asp-for="LoginData.Password" class="form-control" id="Wachtwoord" placeholder="Wachtwoord" />
             </div>
 
-            <button type="submit" id="button" class="btn btn-primary btn-block" onclick="">Inloggen</button>
+            <button type="submit" id="button" class="btn btn-primary btn-block" asp-page-handler="Login">Inloggen</button>
         </form>
         <div class="centered">
         </div>
     </div>
+
+    @* register *@
 
     <div class="split right">
         <form method="post">
             <h1 class="head">Nog geen account?</h1>
             <div class="form-group">
                 <label for="email">Naam</label>
-                <input type="email" class="form-control" id="email" placeholder="Email" />
+                <input asp-for="UserData.UserName" class="form-control" id="email" placeholder="Naam" />
             </div>
 
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Email" />
+                <input asp-for="RegisterData.Email" class="form-control" id="email" placeholder="Email" />
             </div>
 
             <div class="form-group">
                 <label for="wachtwoord">Wachtwoord</label>
-                <input type="email" class="form-control" id="Wachtwoord" placeholder="Wachtwoord" />
+                <input asp-for="RegisterData.Password" class="form-control" id="Wachtwoord" placeholder="Wachtwoord" />
             </div>
 
             <div class="form-group">
                 <label for="wachtwoord">Wachtwoord bevestigen</label>
-                <input type="email" class="form-control" id="WachtwoordConfirm" placeholder="Wachtwoord" />
+                <input asp-for="RegisterData.PassConfirm" class="form-control" id="WachtwoordConfirm" placeholder="Wachtwoord" />
             </div>
 
-            <button type="submit" id="button" class="btn btn-primary btn-block" onclick="">Account aanmaken</button>
+            <button type="submit" id="button" class="btn btn-primary btn-block" asp-page-handler="Register">Account aanmaken</button>
             </form>
             <div class="centered"></div>
     </div>
-
-
-
-    @*<div class="container-fluid" class="col-md-1 col-sm-1 col-xs-3"  id="container_inloggen_2" >
-            <h1>Inlogpagina</h1>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-12"></div>
-                <div class="col-md-4 col-sm-4 col-xs-12">
-
-                    <form action="index.html" method="get">
-                        <div class="form-group">
-                            <label for="examplemail1">Email</label>
-                            <input type="email" class="form-control" id="examplemail1" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <label for="examplepassword1">Password</label>
-                            <input type="password" class="form-control" id="examplepassword1" placeholder="Password">
-                        </div>
-
-                        <button type="submit" class="btn btn-primary btn-block" onclick="">Inloggen</button>
-
-                    </form>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-12"></div>
-            </div>
-        </div>
-        </div>*@
-
-
-
 </body>

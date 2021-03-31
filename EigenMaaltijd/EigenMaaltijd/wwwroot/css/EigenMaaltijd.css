@@ -54,13 +54,14 @@ body {
 }
 
 .popup-content {
-    height: 95%;
-    width: 95%;
+    height: 900px;
+    width: 1800px;
     background: #bfe8ff;
     border-radius: 5px;
     position: relative;
     border: double black 10px;
 }
+
 
 #btn_close {
     margin-right: 1%;

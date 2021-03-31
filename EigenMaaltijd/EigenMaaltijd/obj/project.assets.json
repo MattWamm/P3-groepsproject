@@ -1178,11 +1178,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ninob\\OneDrive\\Bureaublad\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj",
+      "projectUniqueName": "C:\\Users\\ninob\\Documents\\GitHub\\P3-groepsproject\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj",
       "projectName": "EigenMaaltijd",
-      "projectPath": "C:\\Users\\ninob\\OneDrive\\Bureaublad\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj",
+      "projectPath": "C:\\Users\\ninob\\Documents\\GitHub\\P3-groepsproject\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj",
       "packagesPath": "C:\\Users\\ninob\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ninob\\OneDrive\\Bureaublad\\EigenMaaltijd\\EigenMaaltijd\\obj\\",
+      "outputPath": "C:\\Users\\ninob\\Documents\\GitHub\\P3-groepsproject\\EigenMaaltijd\\EigenMaaltijd\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
