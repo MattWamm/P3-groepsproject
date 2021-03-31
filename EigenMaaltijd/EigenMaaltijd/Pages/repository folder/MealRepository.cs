@@ -20,8 +20,8 @@ namespace EigenMaaltijd.Pages
 
             int rows = _db.Execute
                 (
-                "INSERT INTO maaltijden (UserID, Name, Ingredients, Portions, PortionSize, Rating) VALUES (@userID, @Name, @ingredients, @portions, @portionSize, @rating)",
-                new { userID = meal.UserID, name = meal.Name, ingredients = meal.Ingredients, portions = meal.Portions, portionSize = meal.PortionSize, rating = meal.Rating }
+                "INSERT INTO maaltijden (UserID, Name, Ingredients, Portions, PortionSize, Rating, Ingevroren) VALUES (@userID, @Name, @ingredients, @portions, @portionSize, @rating, @ingevroren)",
+                new { userID = meal.UserID, name = meal.Name, ingredients = meal.Ingredients, portions = meal.Portions, portionSize = meal.PortionSize, rating = meal.Rating, ingevroren = meal.Ingevroren }
                 );
             return 0;
         }
@@ -148,7 +148,7 @@ namespace EigenMaaltijd.Pages
         {
         
            List<Meal> _mealRepository = new MealRepository().GetAllMeals();
-
+            
             if (!string.IsNullOrEmpty(searchTerm))
             {
                 return _mealRepository.Where(m => m.Name.Contains(searchTerm) ||

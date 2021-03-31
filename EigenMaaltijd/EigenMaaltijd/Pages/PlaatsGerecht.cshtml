@@ -129,6 +129,7 @@
                             </div>
                         </div>
 
+
                         <div class="flex vertical">
                             <div class="count flex vertical">
                                 <label>Portiegrootte (in grammen):</label>
@@ -139,6 +140,8 @@
                                 </div>
                             </div>
                         </div>
+
+                        
 
                         <div class="flex vertical">
                             <span>Foto's</span>
@@ -154,16 +157,25 @@
                         </div>
                     </div>
 
+
                     <div class="flex vertical justify--between">
                         <div class="flex vertical">
+
+
                             <span>Ingrediënten toevoegen:</span>
                             <table>
                                 <tr>
                                     <th><input asp-for="meal.Ingredients" type="text" placeholder="Ingrediënt..." /></th>
+
                                     <th><input type="text" placeholder="Prijs..." /></th>
                                     <th><button>Toevoegen</button></th>
                                 </tr>
                             </table>
+                            <label for="ingevroren">Ingevroren:</label>
+                            <select asp-for="meal.Ingevroren" id="ingevroren" name="ingevroren">
+                                <option value="Ja">Ja</option>
+                                <option value="Nee">Nee</option>
+                            </select>
                         </div>
 
                         <div class="grid col-g-2 gap-s">
