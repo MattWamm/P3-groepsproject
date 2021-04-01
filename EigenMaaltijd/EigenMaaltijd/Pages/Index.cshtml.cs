@@ -19,6 +19,7 @@ namespace EigenMaaltijd.Pages
             }
             }
           
+        
 
         [BindProperty(SupportsGet = true)]
         public string SearchTerm { get; set; }
