@@ -19,7 +19,10 @@ namespace EigenMaaltijd.Pages
 
         [BindProperty]
         public RegisterLUser RegisterData { get; set; }
-        
+
+        [BindProperty(SupportsGet = true)]
+        public string SearchTerm { get; set; }
+
 
         public void OnGet()
         {
@@ -59,6 +62,11 @@ namespace EigenMaaltijd.Pages
             return RedirectToPage("MijnProfiel");
         }
 
+        public void OnPostSearch()
+        {
+            new MealRepository().Search(SearchTerm);
+
+        }
 
     }
     public class tempData : Controller

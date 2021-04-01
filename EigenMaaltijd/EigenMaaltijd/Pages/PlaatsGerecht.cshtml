@@ -79,6 +79,13 @@
             margin-top: 20px;
             font-size: 30px;
         }
+        label {
+            font-weight: normal !important;
+        }
+        #betaling {
+            margin-right: 200px;
+        }
+        
     </style>
 </head>
 
@@ -160,8 +167,24 @@
 
                     <div class="flex vertical justify--between">
                         <div class="flex vertical">
-
-
+                            <table>
+                                <tr>
+                                    <th>
+                                        <label for="ingevroren">Ingevroren:</label>
+                                        <select asp-for="meal.Ingevroren" id="ingevroren" name="ingevroren">
+                                            <option value="Ja">Ja</option>
+                                            <option value="Nee">Nee</option>
+                                        </select>
+                                    </th>
+                                    <th>
+                                        <label for="ingevroren" id="betaling">Betaling:</label>
+                                        <select asp-for="meal.Betalingsmethode" id="betaling" name="betaling">
+                                            <option value="Contant">Contant</option>
+                                        </select>
+                                    </th>
+                                </tr>
+                            </table>
+                            <br />
                             <span>Ingrediënten toevoegen:</span>
                             <table>
                                 <tr>
@@ -171,18 +194,12 @@
                                     <th><button>Toevoegen</button></th>
                                 </tr>
                             </table>
-                            <label for="ingevroren">Ingevroren:</label>
-                            <select asp-for="meal.Ingevroren" id="ingevroren" name="ingevroren">
-                                <option value="Ja">Ja</option>
-                                <option value="Nee">Nee</option>
-                            </select>
+                            <br />
+                            <div class="grid col-g-2 gap-s">
+                                <span>Totaal: €0,00</span>
+                                <button asp-page-handler="Plaats">Plaats het gerecht</button>
+                            </div>
                         </div>
-
-                        <div class="grid col-g-2 gap-s">
-                            <span>Totaal: €0,00</span>
-                            <button asp-page-handler="Plaats">Plaats het gerecht</button>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
