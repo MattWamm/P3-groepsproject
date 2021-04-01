@@ -98,7 +98,7 @@
     <div class="container-fluid" id="container_plaatsgerecht_2">
         <h1><br></h1>
     </div>
-    <form method="post">
+    <form method="post" enctype="multipart/form-data">
         <div class="container-fluid" id="container_plaatsgerecht_3">
             <div class="segment flex vertical">
                 <h2>Gerecht plaatsen</h2>
@@ -141,7 +141,7 @@
                         <div class="flex vertical">
                             <span>Foto's</span>
                             <div class="grid col-g-2 gap-s">
-                                <div class="featured-image upload"></div>
+                                <div class="featured-image upload"><input type="file" asp-for="test"/></div>
                                 <div class="grid col-g-2 gap-s">
                                     <div class="upload"></div>
                                     <div class="upload"></div>

@@ -20,8 +20,8 @@ namespace EigenMaaltijd.Pages
 
             int rows = _db.Execute
                 (
-                "INSERT INTO maaltijden (UserID, Name, Ingredients, Portions, PortionSize, Rating) VALUES (@userID, @Name, @ingredients, @portions, @portionSize, @rating)",
-                new { userID = meal.UserID, name = meal.Name, ingredients = meal.Ingredients, portions = meal.Portions, portionSize = meal.PortionSize, rating = meal.Rating }
+                "INSERT INTO maaltijden (UserID, Name, Ingredients, Portions, PortionSize, Rating, Img) VALUES (@userID, @Name, @ingredients, @portions, @portionSize, @rating, @img)",
+                new { userID = meal.UserID, name = meal.Name, ingredients = meal.Ingredients, portions = meal.Portions, portionSize = meal.PortionSize, rating = meal.Rating, img = meal.Img}
                 );
             return 0;
         }

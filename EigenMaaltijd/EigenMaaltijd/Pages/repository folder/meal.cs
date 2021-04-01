@@ -7,7 +7,6 @@ namespace EigenMaaltijd.Pages
 {
     public class Meal
     {
-
         public int MealID { get; set; }
         public int UserID { get; set; }
         public string Name { get; set; }
@@ -15,5 +14,6 @@ namespace EigenMaaltijd.Pages
         public int Portions { get; set; }
         public string PortionSize { get; set; }
         public float Rating { get; set; } 
+        public byte[] Img { get; set; }
     }
 }

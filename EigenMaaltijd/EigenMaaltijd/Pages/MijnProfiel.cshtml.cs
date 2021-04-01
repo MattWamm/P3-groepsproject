@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -13,21 +14,21 @@ namespace EigenMaaltijd.Pages
         public User LogUser 
         { get 
             {
-                return new UserRepository().getUserFromID(Convert.ToInt32(Request.Cookies["keepLogin"]));
+                return new UserRepository().getUserFromID((int)ViewData["keepLogin"]);
             } 
         }
         public LoginUser LoginData 
         {
             get 
             {
-                return new UserRepository().getLoginUserFromID(Convert.ToInt32(Request.Cookies["keepLogin"]));
+                return new UserRepository().getLoginUserFromID((int)ViewData["keepLogin"]);
             }
         }
 
         public IActionResult OnGet()
         {
-            string cookie = Request.Cookies["keepLogin"];
-            if (cookie != null)
+            ViewData["keepLogin"] = HttpContext.Session.GetInt32("keepLogin");
+            if (ViewData["keepLogin"] != null)
             {
                 return new PageResult();
             }
@@ -35,12 +36,11 @@ namespace EigenMaaltijd.Pages
             {
                 return RedirectToPage("Inloggen");
             }
-            
         }
 
         public IActionResult OnGetLogout()
         {
-            Response.Cookies.Delete("keepLogin");
+            HttpContext.Session.Remove("keepLogin");
             return RedirectToPage("Index");
         }
     }
