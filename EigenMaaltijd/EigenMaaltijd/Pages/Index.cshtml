@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/EigenMaaltijd.css">
     <script src="lib/jquery/dist/jquery.js"></script>
-    <title></title>
+    <title>Home</title>
     <style>
         .titel {
             margin-left: 70px;
@@ -36,6 +36,7 @@
             align-content: baseline;
             margin: 0px;
             padding: 0px;
+            margin-right:750px;
         }
 
         ul {
@@ -115,10 +116,10 @@
         <nav class="navbar navbar-expand" id="nav">
             <a class="navbar-brand" asp-page="/Index"><img src="~/img/Testlogo.png" height="35" width="140" alt="Testlogo EigenMaaltijd" id="Testlogo" /></a>
 
-            <form class="form" id="form_zoekbalk" method="post" asp-page-handler="Search">
+            <form class="form" id="form_zoekbalk" method="post" asp-page-handler="Search" asp-page="/ZoekMaaltijd">
                 <input class="form-control" type="search" placeholder="Zoeken naar gerecht..." id="input_zoekbalk" asp-for="SearchTerm">
             </form>
-            <a class="navbar" id="aanmelden" asp-page="/Inloggen"><img src="~/img/Profiellogo.png" height="20" width="20" alt="Logo Mijn Profiel" id="Profiellogo" />&nbsp @Model.ButtonTextLogin</a>
+            <a class="navbar" id="aanmelden" asp-page="/Inloggen"><img src="~/img/Profiellogo.png" height="20" width="20" alt="Logo Mijn Profiel" id="Profiellogo" /> &nbsp Aanmelden</a>
 
         </nav>
     </div>

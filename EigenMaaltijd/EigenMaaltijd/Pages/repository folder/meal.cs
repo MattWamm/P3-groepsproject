@@ -15,5 +15,8 @@ namespace EigenMaaltijd.Pages
         public string PortionSize { get; set; }
         public float Rating { get; set; } 
         public byte[] Img { get; set; }
+        public bool Ingevroren { get; set; }
+        public string Betalingsmethode { get; set; }
+
     }
 }

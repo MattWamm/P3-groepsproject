@@ -19,7 +19,10 @@ namespace EigenMaaltijd.Pages
 
         [BindProperty]
         public RegisterLUser RegisterData { get; set; }
-        
+
+        [BindProperty(SupportsGet = true)]
+        public string SearchTerm { get; set; }
+
 
         public void OnGet()
         {

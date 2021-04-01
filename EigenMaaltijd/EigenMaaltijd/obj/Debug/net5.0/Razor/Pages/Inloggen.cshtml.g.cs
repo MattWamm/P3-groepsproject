@@ -158,16 +158,48 @@ using EigenMaaltijd;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n\r\n            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "66e35529b2df93e90f414b715889308718d4375d19141", async() => {
-                    WriteLiteral("\r\n                <input class=\"form-control\" type=\"search\" placeholder=\"Zoeken naar gerecht...\" id=\"input_zoekbalk\">\r\n            ");
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ca3ab10b50c9feec85e9af55e16b2863f07383ce20791", async() => {
+                    WriteLiteral("\r\n                ");
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ca3ab10b50c9feec85e9af55e16b2863f07383ce21074", async() => {
+                    }
+                    );
+                    __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
+                    __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+                    __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_10);
+                    __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.InputTypeName = (string)__tagHelperAttribute_11.Value;
+                    __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_11);
+                    __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_12);
+                    __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_13);
+#nullable restore
+#line 22 "C:\Users\ninob\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\Pages\Inloggen.cshtml"
+__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvider.CreateModelExpression(ViewData, __model => __model.SearchTerm);
+
+#line default
+#line hidden
+#nullable disable
+                    __tagHelperExecutionContext.AddTagHelperAttribute("asp-for", __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+                    await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+                    if (!__tagHelperExecutionContext.Output.IsContentModified)
+                    {
+                        await __tagHelperExecutionContext.SetOutputContentAsync();
+                    }
+                    Write(__tagHelperExecutionContext.Output);
+                    __tagHelperExecutionContext = __tagHelperScopeManager.End();
+                    WriteLiteral("\r\n            ");
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
                 __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
                 __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
                 __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
-                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_10);
-                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_11);
+                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_14);
+                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_15);
+                __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string)__tagHelperAttribute_16.Value;
+                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_16);
+                __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.PageHandler = (string)__tagHelperAttribute_17.Value;
+                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_17);
+                __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Page = (string)__tagHelperAttribute_18.Value;
+                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_18);
                 await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
                 if (!__tagHelperExecutionContext.Output.IsContentModified)
                 {
@@ -175,11 +207,11 @@ using EigenMaaltijd;
                 }
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                WriteLiteral("\r\n        </nav>\r\n    </div>\r\n\r\n");
-                WriteLiteral("\r\n    <div class=\"split left\">\r\n        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "66e35529b2df93e90f414b715889308718d4375d20869", async() => {
-                    WriteLiteral("\r\n            <h1 class=\"head\">Inloggen</h1>\r\n            <div class=\"form-group\">\r\n                <label for=\"email\">Email</label>\r\n                ");
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "66e35529b2df93e90f414b715889308718d4375d21296", async() => {
+                WriteLiteral("\r\n            <a class=\"navbar\"></a>\r\n\r\n        </nav>\r\n    </div>\r\n\r\n");
+                WriteLiteral("\r\n    \r\n<div class=\"split left\" style=\"margin-top: 80px;\">\r\n    ");
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ca3ab10b50c9feec85e9af55e16b2863f07383ce25181", async() => {
+                    WriteLiteral("\r\n        <h1 class=\"head\">Inloggen</h1>\r\n        <div class=\"form-group\">\r\n            <label for=\"email\">Email</label>\r\n            ");
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ca3ab10b50c9feec85e9af55e16b2863f07383ce25592", async() => {
                     }
                     );
                     __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -202,8 +234,8 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                     }
                     Write(__tagHelperExecutionContext.Output);
                     __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                    WriteLiteral("\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <label for=\"wachtwoord\">Wachtwoord</label>\r\n                ");
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "66e35529b2df93e90f414b715889308718d4375d23277", async() => {
+                    WriteLiteral("\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"wachtwoord\">Wachtwoord</label>\r\n            ");
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ca3ab10b50c9feec85e9af55e16b2863f07383ce27566", async() => {
                     }
                     );
                     __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -216,9 +248,9 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
 #line hidden
 #nullable disable
                     __tagHelperExecutionContext.AddTagHelperAttribute("asp-for", __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-                    __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_12);
-                    __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_15);
-                    __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_16);
+                    __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_10);
+                    __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_21);
+                    __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_22);
                     await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
                     if (!__tagHelperExecutionContext.Output.IsContentModified)
                     {
@@ -226,18 +258,18 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                     }
                     Write(__tagHelperExecutionContext.Output);
                     __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                    WriteLiteral("\r\n            </div>\r\n\r\n            ");
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "66e35529b2df93e90f414b715889308718d4375d25155", async() => {
+                    WriteLiteral("\r\n        </div>\r\n\r\n        ");
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ca3ab10b50c9feec85e9af55e16b2863f07383ce29445", async() => {
                         WriteLiteral("Inloggen");
                     }
                     );
                     __Microsoft_AspNetCore_Mvc_TagHelpers_FormActionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormActionTagHelper>();
                     __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormActionTagHelper);
-                    __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_17);
-                    __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_18);
-                    __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_19);
-                    __Microsoft_AspNetCore_Mvc_TagHelpers_FormActionTagHelper.PageHandler = (string)__tagHelperAttribute_20.Value;
-                    __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_20);
+                    __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_23);
+                    __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_24);
+                    __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_25);
+                    __Microsoft_AspNetCore_Mvc_TagHelpers_FormActionTagHelper.PageHandler = (string)__tagHelperAttribute_26.Value;
+                    __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_26);
                     await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
                     if (!__tagHelperExecutionContext.Output.IsContentModified)
                     {
@@ -252,8 +284,8 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                 __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
                 __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
                 __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
-                __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string)__tagHelperAttribute_21.Value;
-                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_21);
+                __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string)__tagHelperAttribute_16.Value;
+                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_16);
                 await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
                 if (!__tagHelperExecutionContext.Output.IsContentModified)
                 {
@@ -261,11 +293,11 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                 }
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                WriteLiteral("\r\n        <div class=\"centered\">\r\n        </div>\r\n    </div>\r\n\r\n");
-                WriteLiteral("\r\n    <div class=\"split right\">\r\n        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "66e35529b2df93e90f414b715889308718d4375d28146", async() => {
+                WriteLiteral("\r\n    <div class=\"centered\">\r\n    </div>\r\n</div>\r\n\r\n");
+                WriteLiteral("\r\n    <div class=\"split right\" style=\"margin-top: 80px;\">\r\n        ");
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ca3ab10b50c9feec85e9af55e16b2863f07383ce32448", async() => {
                     WriteLiteral("\r\n            <h1 class=\"head\">Nog geen account?</h1>\r\n            <div class=\"form-group\">\r\n                <label for=\"email\">Naam</label>\r\n                ");
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "66e35529b2df93e90f414b715889308718d4375d28581", async() => {
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ca3ab10b50c9feec85e9af55e16b2863f07383ce32883", async() => {
                     }
                     );
                     __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();

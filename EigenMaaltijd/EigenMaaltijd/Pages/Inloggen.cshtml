@@ -18,35 +18,38 @@
         <nav class="navbar navbar-expand" id="nav">
             <a class="navbar-brand" asp-page="/Index"><img src="~/img/Testlogo.png" height="35" width="140" alt="Testlogo EigenMaaltijd" id="Testlogo" /></a>
 
-            <form class="form" id="form_zoekbalk">
-                <input class="form-control" type="search" placeholder="Zoeken naar gerecht..." id="input_zoekbalk">
+            <form class="form" id="form_zoekbalk" method="post" asp-page-handler="Search" asp-page="/ZoekMaaltijd">
+                <input class="form-control" type="search" placeholder="Zoeken naar gerecht..." id="input_zoekbalk" asp-for="SearchTerm">
             </form>
+            <a class="navbar"></a>
+
         </nav>
     </div>
 
     @* login *@
 
-    <div class="split left">
-        <form method="post">
-            <h1 class="head">Inloggen</h1>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input asp-for="LoginData.Email" class="form-control" id="email" placeholder="Email" />
-            </div>
-            <div class="form-group">
-                <label for="wachtwoord">Wachtwoord</label>
-                <input asp-for="LoginData.Password" class="form-control" id="Wachtwoord" placeholder="Wachtwoord" />
-            </div>
-
-            <button type="submit" id="button" class="btn btn-primary btn-block" asp-page-handler="Login">Inloggen</button>
-        </form>
-        <div class="centered">
+    
+<div class="split left" style="margin-top: 80px;">
+    <form method="post">
+        <h1 class="head">Inloggen</h1>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input asp-for="LoginData.Email" class="form-control" id="email" placeholder="Email" />
         </div>
+        <div class="form-group">
+            <label for="wachtwoord">Wachtwoord</label>
+            <input asp-for="LoginData.Password" class="form-control" id="Wachtwoord" placeholder="Wachtwoord" />
+        </div>
+
+        <button type="submit" id="button" class="btn btn-primary btn-block" asp-page-handler="Login">Inloggen</button>
+    </form>
+    <div class="centered">
     </div>
+</div>
 
     @* register *@
 
-    <div class="split right">
+    <div class="split right" style="margin-top: 80px;">
         <form method="post">
             <h1 class="head">Nog geen account?</h1>
             <div class="form-group">
@@ -70,7 +73,7 @@
             </div>
 
             <button type="submit" id="button" class="btn btn-primary btn-block" asp-page-handler="Register">Account aanmaken</button>
-            </form>
-            <div class="centered"></div>
+        </form>
+        <div class="centered"></div>
     </div>
 </body>
