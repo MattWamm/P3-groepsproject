@@ -385,3 +385,9 @@ C:\Users\matti\Desktop\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\ne
 C:\Users\matti\Desktop\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Web.WebPages.Razor.dll
 C:\Users\matti\Desktop\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Web.WebPages.dll
 C:\Users\matti\Desktop\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Microsoft.Web.Infrastructure.dll
+C:\Users\ninob\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Web.Razor.dll
+C:\Users\ninob\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Web.Helpers.dll
+C:\Users\ninob\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Web.WebPages.Deployment.dll
+C:\Users\ninob\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Web.WebPages.Razor.dll
+C:\Users\ninob\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Web.WebPages.dll
+C:\Users\ninob\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Microsoft.Web.Infrastructure.dll

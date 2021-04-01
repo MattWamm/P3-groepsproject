@@ -167,13 +167,13 @@
                                     <th>
                                         <label for="ingevroren">Ingevroren:</label>
                                         <select asp-for="meal.Ingevroren" id="ingevroren" name="ingevroren">
-                                            <option value="Ja">Ja</option>
-                                            <option value="Nee">Nee</option>
+                                            <option value="True">Ja</option>
+                                            <option value="False">Nee</option>
                                         </select>
                                     </th>
                                     <th>
                                         <label for="ingevroren" id="betaling">Betaling:</label>
-                                        <select asp-for="meal.Betalingsmethode" id="betaling" name="betaling">
+                                        <select asp-for="meal.Betalingsmethode" id="betaling"  name="Contant" >
                                             <option value="Contant">Contant</option>
                                         </select>
                                     </th>
