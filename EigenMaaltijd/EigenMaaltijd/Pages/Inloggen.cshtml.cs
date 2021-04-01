@@ -30,44 +30,27 @@ namespace EigenMaaltijd.Pages
 
         public IActionResult OnPostRegister()
         {
-            int whatever = new UserRepository().Register(UserData, RegisterData);
-
-            User user = new UserRepository().getUserFromID(whatever);
+            int userID = new UserRepository().Register(UserData, RegisterData);
+            User user = new UserRepository().getUserFromID(userID);
             if (User != null)
             {
-                CookieOptions cookieOptions = new CookieOptions
-                {
-                    Expires = DateTime.Now.AddDays(1),
-                    IsEssential = true
-                };
-                Response.Cookies.Append("keepLogin",user.UserID.ToString(), cookieOptions);
+                HttpContext.Session.SetInt32("keepLogin", user.UserID);
             }
             return RedirectToPage("MijnProfiel");
         }
 
         public IActionResult OnPostLogin()
         {
-
             User user = new UserRepository().Login(LoginData.Email, LoginData.Password);
 
             if (user != null)
             {
-                CookieOptions cookieOptions = new CookieOptions
-                {
-                    Expires = DateTime.Now.AddDays(1),
-                    IsEssential = true
-                };
-                Response.Cookies.Append("keepLogin", user.UserID.ToString(), cookieOptions);
+                //session test
+                HttpContext.Session.SetInt32("keepLogin", user.UserID);
+                ViewData["keepLogin"] = HttpContext.Session.GetInt32("keepLogin");
             }
             return RedirectToPage("MijnProfiel");
         }
-
-        public void OnPostSearch()
-        {
-            new MealRepository().Search(SearchTerm);
-
-        }
-
     }
     public class tempData : Controller
     {

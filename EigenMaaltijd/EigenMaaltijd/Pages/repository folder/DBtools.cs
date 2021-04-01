@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -13,9 +13,9 @@ namespace EigenMaaltijd.Pages
         {
             IDbConnection _db = new MySqlConnection(@"Server=localhost;
                                                     Port=3306;
-                                                    Database=eigenmaaltijd;
+                                                    Database=periode3;
                                                     Uid=root;
-                                                    Pwd=Onin2003!;");
+                                                    Pwd=sql53xrvtrw;");
             return _db;
         }
 

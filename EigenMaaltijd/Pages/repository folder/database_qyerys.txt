@@ -1,0 +1,47 @@
+﻿
+
+CREATE TABLE `bestelinformatie` (
+  `UserID` INT NOT NULL,
+  `MealID` INT DEFAULT NULL,
+  `Name` VARCHAR(45) DEFAULT NULL,
+  `Date` DATETIME DEFAULT NULL,
+  PRIMARY KEY (`UserID`)
+);
+
+CREATE TABLE `favourite` (
+  `UserID` INT NOT NULL,
+  `MealID` INT NOT NULL,
+  PRIMARY KEY (`UserID`)
+);
+
+CREATE TABLE `loginusers` (
+  `UserID` INT NOT NULL,
+  `Password` VARCHAR(100) NOT NULL,
+  `Email` VARCHAR(100) UNIQUE NOT NULL,
+  PRIMARY KEY (`UserID`)
+);
+
+CREATE TABLE `maaltijden` (
+  `MealID` INT NOT NULL AUTO_INCREMENT,
+  `UserID` INT NOT NULL,
+  `Name` VARCHAR(100) NOT NULL,
+  `Ingredients` VARCHAR(255) DEFAULT NULL,
+  `Portions` INT NOT NULL,
+  `PortionSize` VARCHAR(50) DEFAULT NULL,
+  `Rating` FLOAT DEFAULT NULL,
+  PRIMARY KEY (`MealID`)
+);
+
+CREATE TABLE `users` (
+  `UserID` INT NOT NULL AUTO_INCREMENT,
+  `UserName` VARCHAR(100) NOT NULL,
+  `GeboorteDatum` DATE DEFAULT NULL,
+  `Telefoon` VARCHAR(11) DEFAULT NULL,
+  `Adres` VARCHAR(100) NOT NULL,
+  `Postcode` VARCHAR(6) NOT NULL,
+  PRIMARY KEY (`UserID`)
+);
+
+
+verander in DBtools de connection string voor je eigen database connectie.
+ik raad ook aan om MySQL Workbench te gebruiken al is dit een beetje ingewikkeld als je nog niet weet hoe die werkt.

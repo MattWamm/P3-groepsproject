@@ -59,8 +59,8 @@
             padding: 0px;
             margin: 15px;
         }
-       
-      
+
+
         * {
             margin: 0;
             padding: 0;
@@ -107,7 +107,6 @@
             .rate > label:hover ~ input:checked ~ label {
                 color: #c59b08;
             }
-          
     </style>
 </head>
 
@@ -125,90 +124,40 @@
         </nav>
     </div>
 
-
-   @foreach (var r in Model.Meals)
-	{
-		 <ul>
-             <li>@r.Rating</li>
-         </ul>
-	}
-    
-
     <div class="container-fluid" id="container_index_2">
         <h1>Welkom bij EigenMaaltijd.</h1>
     </div>
 
     <div class="container-fluid" id="container_index_3">
-        <div class="row no-gutters">
-            <div class="col col-lg-3">
-                <div class="hover-container">
-                    <img class="img-fluid" src="~/img/Tandoori.png" id="img_maaltijd" style="object-fit:cover;" />
-                    <div class="hover-content">
 
-                        <form action="/" method="post">
-                            <p style="text-align:left;" class="maaltijd_beschrijving">
-                                <b> Naam van gerecht</b>  <br>
-                                Woonplaats <br>
-                                <div class="rate" id="hover-rating">
-                                    <input asp-for="meal.Rating" type="radio" id="star5" name="rate" value="5" />
-                                    <label for="star5" title="text">5 stars</label>
-                                    <input type="radio" id="star4" name="rate" value="4" />
-                                    <label for="star4" title="text">4 stars</label>
-                                    <input type="radio" id="star3" name="rate" value="3" />
-                                    <label for="star3" title="text">3 stars</label>
-                                    <input type="radio" id="star2" name="rate" value="2" />
-                                    <label for="star2" title="text">2 stars</label>
-                                    <input type="radio" id="star1" name="rate" value="1" />
-                                    <label for="star1" title="text">1 star</label><br /><br />
-                                </div><br /> <br />
-                            </p>
+        <div class="row no-gutters" >
+            @foreach (IndexMeal IMeal in Model.IMeals)
+            {
+                    <div class="col col-lg-3">
+                        <div class="hover-container">
+                            <img class="img-fluid" src="@IMeal.img64Url" id="img_maaltijd" style=" width: 100px; height: 200px; object-fit: cover; "/>
+                            <div class="hover-content">
 
-                        </form>
+                                <p class="maaltijd_beschrijving">
+                                    <b> @IMeal.meal.Name</b>  <br>
+                                     @IMeal.user.Adres<br>
+                                     @IMeal.meal.Rating <br /><br />
+                                    <i>*Klik voor meer informatie</i>
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col col-lg-3">
-                <div class="hover-container">
-                    <img class="img-fluid" src="~/img/Hutspot.png" id="img_maaltijd" />
-                    <div class="hover-content">
-
-                        <form action="/" method="post">
-                            <p style="text-align:left;" class="maaltijd_beschrijving">
-                                <b> Naam van gerecht</b>  <br>
-                                Woonplaats <br>
-                                <div class="rate" id="hover-rating">
-                                    <input asp-for="meal.Rating" type="radio" id="star5" name="rate" value="5" />
-                                    <label for="star5" title="text">5 stars</label>
-                                    <input type="radio" id="star4" name="rate" value="4" />
-                                    <label for="star4" title="text">4 stars</label>
-                                    <input type="radio" id="star3" name="rate" value="3" />
-                                    <label for="star3" title="text">3 stars</label>
-                                    <input type="radio" id="star2" name="rate" value="2" />
-                                    <label for="star2" title="text">2 stars</label>
-                                    <input type="radio" id="star1" name="rate" value="1" />
-                                    <label for="star1" title="text">1 star</label><br /><br />
-                                </div><br /> <br />
-                            </p>
-
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-
-
-
+            }
         </div>
-
     </div>
 
 
 
 
 
-    <div class="popup">
-        <div class="popup-content" id="popup_content">
-         
+        <div class="popup">
+            <div class="popup-content" id="popup_content">
+
                 <div class="grid-container">
                     <div class="grid-item-1">
                         <h2 class="titel">Stampot boerenkool met rookworst</h2>
@@ -270,30 +219,30 @@
 
                 </div>
 
-         
+
+            </div>
+
+
+
+
+            <script>
+                console.log('Hover content elements', document.getElementsByClassName(".hover-content"));
+
+                const hoverContentElements = document.getElementsByClassName("hover-content");
+                for (var i = 0; i < hoverContentElements.length; i++) {
+                    hoverContentElements[i].addEventListener("click", function () {
+                        document.querySelector(".popup").style.display = "flex";
+
+                    })
+                    document.querySelector(".close").addEventListener("click", function () {
+                        document.querySelector(".popup").style.display = "none";
+                    })
+                }
+
+
+            </script>
+
         </div>
-
-
-
-
-        <script>
-            console.log('Hover content elements', document.getElementsByClassName(".hover-content"));
-
-            const hoverContentElements = document.getElementsByClassName("hover-content");
-            for (var i = 0; i < hoverContentElements.length; i++) {
-                hoverContentElements[i].addEventListener("click", function () {
-                    document.querySelector(".popup").style.display = "flex";
-
-                })
-                document.querySelector(".close").addEventListener("click", function () {
-                    document.querySelector(".popup").style.display = "none";
-                })
-            }
-
-
-        </script>
-
-    </div>
 
 
 

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -10,22 +11,36 @@ namespace EigenMaaltijd.Pages
     public class Index2Model : PageModel
     {
         [BindProperty]
-        public User LogUser {get; set;}
-        public LoginUser LoginData { get; set; }
-
-        public void OnGet()
-        {
-            string cookie = Request.Cookies["keepLogin"];
-            if (cookie != null)
+        public User LogUser 
+        { get 
             {
-                LogUser = new UserRepository().getUserFromID(Convert.ToInt32(cookie));
-                LoginData = new UserRepository().getLoginUserFromID(Convert.ToInt32(cookie));
+                return new UserRepository().getUserFromID((int)ViewData["keepLogin"]);
+            } 
+        }
+        public LoginUser LoginData 
+        {
+            get 
+            {
+                return new UserRepository().getLoginUserFromID((int)ViewData["keepLogin"]);
+            }
+        }
+
+        public IActionResult OnGet()
+        {
+            ViewData["keepLogin"] = HttpContext.Session.GetInt32("keepLogin");
+            if (ViewData["keepLogin"] != null)
+            {
+                return new PageResult();
+            }
+            else
+            {
+                return RedirectToPage("Inloggen");
             }
         }
 
         public IActionResult OnGetLogout()
         {
-            Response.Cookies.Delete("keepLogin");
+            HttpContext.Session.Remove("keepLogin");
             return RedirectToPage("Index");
         }
     }
