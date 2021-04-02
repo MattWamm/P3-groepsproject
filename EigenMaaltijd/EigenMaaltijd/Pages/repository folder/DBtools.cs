@@ -15,7 +15,7 @@ namespace EigenMaaltijd.Pages
                                                     Port=3306;
                                                     Database=periode3;
                                                     Uid=root;
-                                                    Pwd=sql53xrvtrw;");
+                                                    Pwd=Appelmoes31#;");
             return _db;
         }
 

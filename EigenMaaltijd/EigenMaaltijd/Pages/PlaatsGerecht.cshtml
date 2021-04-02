@@ -18,9 +18,11 @@
             margin: 0;
             padding: 0;
         }
+
         .flex {
             display: flex
         }
+
             .flex.vertical {
                 flex-direction: column
             }
@@ -53,12 +55,60 @@
         .upload {
             border: 2px dotted #c3c3c3;
             padding-bottom: 100%;
+            position: relative;
         }
 
             .upload:hover {
                 border-style: solid;
                 cursor: pointer;
             }
+
+            .upload > input {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                visibility: hidden;
+                pointer-events: none;
+            }
+
+            .upload > label {
+                cursor: pointer;
+            }
+
+            .upload > img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+            }
+
+            .upload > .add,
+            .upload > .remove,
+            .upload > label {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+            }
+
+            .upload:not(.filled):hover > .add {
+                background-color: #d2d2d245;
+            }
+
+            .upload.filled:hover > .remove {
+                background-color: #d863636e;
+            }
+
+            .upload:not(.filled) > img {
+                visibility: hidden;
+            }
+
+            .upload > .add,
+            .upload > .remove {
+                pointer-events: none;
+            }
+
 
         #container_plaatsgerecht_3 {
             background-color: white;
@@ -77,13 +127,14 @@
             margin-top: 20px;
             font-size: 30px;
         }
+
         label {
             font-weight: normal !important;
         }
+
         #betaling {
             margin-right: 200px;
         }
-        
     </style>
 </head>
 
@@ -148,7 +199,7 @@
                         <div class="flex vertical">
                             <span>Foto's</span>
                             <div class="grid col-g-2 gap-s">
-                                <div class="featured-image upload"><input type="file" asp-for="test"/></div>
+                                <div class="featured-image upload"></div>
                                 <div class="grid col-g-2 gap-s">
                                     <div class="upload"></div>
                                     <div class="upload"></div>
@@ -199,4 +250,52 @@
             </div>
         </div>
     </form>
+
+    <script>
+        $(document).ready(() => {
+
+            var squares = document.querySelectorAll(".upload");
+
+            [].forEach.call(squares, (square, i) => {
+                $(square)
+                    .html(`
+                                <input type="file" accept=".jpg,.jpeg,.png" class="hide" data-i="${i}" id="input-${i}" />
+                                <img class="preview" />
+                                <div class="add"></div>
+                                <div class="remove"></div>
+                                <label for="input-${i}"></label>
+                            `)
+            });
+
+            $(document).on("change", "input.hide", e => {
+                var input = e.target,
+                    parent = input.parentNode,
+                    reader = new FileReader();
+
+                if (input.files.length) {
+
+                    if (input.getAttribute("data-i") > 0) input.setAttribute("name", "images[]")
+                    else input.setAttribute("name", "featured")
+
+                    parent.classList.add("filled");
+
+                    reader.readAsDataURL(input.files[0]);
+                    reader.addEventListener("load", function () {
+                        parent.children[1].src = reader.result;
+                    }, false);
+                }
+            });
+
+            $(document).on("click", ".upload > label", e => {
+                if (e.target.parentNode.children[0].hasAttribute("name")) {
+                    e.target.parentNode.children[0].removeAttribute("name");
+                    e.target.parentNode.children[1].removeAttribute("src");
+                    e.target.parentNode.classList.remove("filled");
+
+                    e.preventDefault();
+                }
+            });
+
+        });
+    </script>
 </body>
