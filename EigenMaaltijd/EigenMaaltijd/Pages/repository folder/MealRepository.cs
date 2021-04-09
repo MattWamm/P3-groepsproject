@@ -74,6 +74,18 @@ namespace EigenMaaltijd.Pages
         }
 
 
+        public Meal GetMealFromMealID(int MealID)
+        {
+            using IDbConnection _db = Connect();
+            Meal returnList = _db.QuerySingleOrDefault<Meal>
+                ("SELECT * FROM maaltijden WHERE MealID = @mealID",
+                new { mealID = MealID });
+            return returnList;
+        }
+
+
+
+
         public int AddFavourite(int MealID, int UserID)
         {
             using IDbConnection _db = Connect();

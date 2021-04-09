@@ -31,6 +31,11 @@ namespace EigenMaaltijd
                 options.IdleTimeout = TimeSpan.FromMinutes(30);
                 options.Cookie.Name = "sessionID";
             });
+            services.AddAntiforgery(o => o.HeaderName = "XSRF-TOKEN");
+            services.Configure<IISServerOptions>(options =>
+            {
+                options.AllowSynchronousIO = true;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

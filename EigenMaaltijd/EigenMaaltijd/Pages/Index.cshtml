@@ -7,107 +7,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/EigenMaaltijd.css">
+    <link rel="stylesheet" href="css/EigenMaaltijd.css"/>
+    <link rel="stylesheet" href="~/css/popup.css"/>
+    <link rel="stylesheet" href="~/css/site.css"/>
     <script src="lib/jquery/dist/jquery.js"></script>
     <title>Home</title>
-    <style>
-        .titel {
-            margin-left: 70px;
-        }
-
-        h2 {
-            margin: 0;
-            padding: 15px 15px;
-            text-align: left
-        }
-
-        h4 {
-            text-align: left;
-            margin: 15px;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: auto auto auto;
-            padding: 10px;
-        }
-
-        .Bestellen {
-            align-content: baseline;
-            margin: 0px;
-            padding: 0px;
-            margin-right:750px;
-        }
-
-        ul {
-            margin: 15px;
-            padding: 10px;
-        }
-
-        li {
-            text-align: left;
-            margin: 15px;
-            line-height: 0.8;
-        }
-
-        .Gerecht {
-            border: 3px solid black;
-        }
-
-        p {
-            text-align: left;
-            padding: 0px;
-            margin: 15px;
-        }
-
-
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .rate {
-            float: left;
-            height: 46px;
-            padding: 0 10px;
-        }
-
-            .rate:not(:checked) > input {
-                position: absolute;
-                top: -9999px;
-            }
-
-            .rate:not(:checked) > label {
-                float: right;
-                width: 1em;
-                overflow: hidden;
-                white-space: nowrap;
-                cursor: pointer;
-                font-size: 30px;
-                color: #ccc;
-            }
-
-                .rate:not(:checked) > label:before {
-                    content: '★ ';
-                }
-
-            .rate > input:checked ~ label {
-                color: #ffc700;
-            }
-
-            .rate:not(:checked) > label:hover,
-            .rate:not(:checked) > label:hover ~ label {
-                color: #deb217;
-            }
-
-            .rate > input:checked + label:hover,
-            .rate > input:checked + label:hover ~ label,
-            .rate > input:checked ~ label:hover,
-            .rate > input:checked ~ label:hover ~ label,
-            .rate > label:hover ~ input:checked ~ label {
-                color: #c59b08;
-            }
-    </style>
 </head>
 
 <body>
@@ -136,14 +40,13 @@
                     <div class="col col-lg-3">
                         <div class="hover-container">
                             <img class="img-fluid" src="@IMeal.img64Url" id="img_maaltijd" style=" width: 100px; height: 200px; object-fit: cover; "/>
-                            <div class="hover-content">
-
-                                <p class="maaltijd_beschrijving">
-                                    <b> @IMeal.meal.Name</b>  <br>
-                                     @IMeal.user.Adres<br>
-                                     @IMeal.meal.Rating <br /><br />
-                                    <i>*Klik voor meer informatie</i>
-                                </p>
+                            <div class="hover-content" id="@IMeal.meal.MealID.ToString()">
+                                    <p class="maaltijd_beschrijving">
+                                            <b> @IMeal.meal.Name</b>  <br>
+                                            @IMeal.user.Adres<br>
+                                            @IMeal.meal.Rating <br /><br />
+                                            <button type="submit"></button>
+                                    </p>
                             </div>
                         </div>
                     </div>
@@ -151,11 +54,7 @@
         </div>
     </div>
 
-
-
-
-
-        <div class="popup">
+        <div class="popup" id="popup">
             <div class="popup-content" id="popup_content">
 
                 <div class="grid-container">
@@ -190,7 +89,7 @@
                         <h2>Stampot boerenkool met rookworst</h2>
                         <p>Ingredienten:</p>
                         <ul>
-                            <li>Aardappelen</li>
+                            <li>@Model.ClickedMeal.Name</li>
                             <li>Gesneden boerenkool</li>
                             <li>Rookworst</li>
                             <li>Peper en zout</li>
@@ -227,18 +126,31 @@
 
             <script>
                 console.log('Hover content elements', document.getElementsByClassName(".hover-content"));
-
                 const hoverContentElements = document.getElementsByClassName("hover-content");
                 for (var i = 0; i < hoverContentElements.length; i++) {
-                    hoverContentElements[i].addEventListener("click", function () {
+                    var hoverContent = hoverContentElements[i]
+                    hoverContent.addEventListener("click", function () {
+                        var item1 = hoverContent.id
+                        $.ajax({
+                            type: "POST",
+                            url: "/Index?handler=List",
+                            beforeSend: function (xhr) {
+                                xhr.setRequestHeader("XSRF-TOKEN",
+                                    $('input:hidden[name="__RequestVerificationToken"]').val());
+                            },
+                            data: JSON.stringify(
+                            {
+                                Item1: item1
+                            }),
+                            contentType: "application/json; charset=utf-8",
+                            dataType: "json",
+                        })
                         document.querySelector(".popup").style.display = "flex";
-
                     })
                     document.querySelector(".close").addEventListener("click", function () {
-                        document.querySelector(".popup").style.display = "none";
+                        document.querySelectr(".popup").style.display = "none";
                     })
                 }
-
 
             </script>
 
