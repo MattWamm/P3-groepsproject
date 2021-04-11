@@ -70,10 +70,15 @@ namespace EigenMaaltijd.Pages
         }
         public void OnPostRating(int mealID, int rate)
         {
+            if (ViewData["keepLogin"] == null)
+            {
+                RedirectToPage("inloggen");
 
+            }
             int userid = (int)(ViewData["keepLogin"] = HttpContext.Session.GetInt32("keepLogin"));
-             
+
            
+
             if (ViewData["keepLogin"] != null)
             {
                 new MealRepository().addRating(mealID, rate, userid);
