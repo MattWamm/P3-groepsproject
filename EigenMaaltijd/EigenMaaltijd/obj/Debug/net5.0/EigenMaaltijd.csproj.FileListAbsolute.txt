@@ -386,3 +386,4 @@ C:\Users\matti\Desktop\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\ne
 C:\Users\matti\Desktop\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Web.WebPages.dll
 C:\Users\matti\Desktop\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Microsoft.Web.Infrastructure.dll
 C:\Users\matti\Desktop\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\ZoekMaaltijd.cshtml.g.cs
+C:\Users\matti\Desktop\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Shared\_PartialPopup.cshtml.g.cs

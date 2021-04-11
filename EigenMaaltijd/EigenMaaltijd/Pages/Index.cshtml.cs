@@ -71,10 +71,9 @@ namespace EigenMaaltijd.Pages
             new MealRepository().Search(SearchTerm);
         }
 
-
-
-        public void OnPostList()
+        public ActionResult OnPostList()
         {
+            string returnString = "";
             {
                 MemoryStream stream = new MemoryStream();
 
@@ -89,12 +88,20 @@ namespace EigenMaaltijd.Pages
                         if (obj != null)
                         {
                             HttpContext.Session.SetInt32("ClickedMeal", Convert.ToInt32(obj.Item1));
+                            returnString = obj.Item1;
                         }
                     }
                 }
             }
+            List<string> lstString = new List<string>
+            {
+            returnString
+            };
+
+                return new JsonResult(lstString);
         }
-        public Meal ClickedMeal 
+        
+        public ClickedMeal ClickedMeal 
         {
             get
             {
@@ -105,28 +112,59 @@ namespace EigenMaaltijd.Pages
                     int mealID = (int)ViewData["ClickedMeal"];
                     if (mealID != 0)
                     {
-                        return new MealRepository().GetMealFromMealID(mealID);
+                        Meal meal = new MealRepository().GetMealFromMealID(mealID);
+
+                        string[] splits = meal.Ingredients.Split(',');
+                        ClickedMeal CMeal = new ClickedMeal()
+                        {
+                            MealID = meal.MealID,
+                            UserID = meal.UserID,
+                            Name = meal.Name,
+                            Ingredients = splits.ToList<string>(),
+                            Portions = meal.Portions,
+                            PortionSize = meal.PortionSize,
+                            Rating = meal.Rating,
+                            Img = meal.Img,
+                            Ingevroren = meal.Ingevroren,
+                            Betalingsmethode = meal.Betalingsmethode
+                        };
+                        return CMeal;
                     }
                     else
                     {
-                        Meal meal = new Meal();
-
-                        return meal;
+                        return new ClickedMeal();
                     }
 
                 }
                 else 
                 {
-                    Meal meal = new Meal();
-
-                    return meal;
+                    return new ClickedMeal();
                 }
             }
         
         }
 
+        public PartialViewResult OnGetMealPartial()
+        {
+            return Partial("_PartialPopup", ClickedMeal);
+        }
+
+
     }
 
+    public class ClickedMeal
+    {
+        public int MealID { get; set; }
+        public int UserID { get; set; }
+        public string Name { get; set; }
+        public List<string> Ingredients { get; set; }
+        public int Portions { get; set; }
+        public string PortionSize { get; set; }
+        public float Rating { get; set; }
+        public byte[] Img { get; set; }
+        public bool Ingevroren { get; set; }
+        public string Betalingsmethode { get; set; }
+    }
 
 
 
@@ -134,8 +172,6 @@ namespace EigenMaaltijd.Pages
     public class PostData
     {
         public string Item1 { get; set; }
-        public string Item2 { get; set; }
-        public string Item3 { get; set; }
     }
 
     public class IndexMeal

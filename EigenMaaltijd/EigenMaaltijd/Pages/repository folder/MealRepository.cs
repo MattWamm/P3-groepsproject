@@ -77,7 +77,7 @@ namespace EigenMaaltijd.Pages
         public Meal GetMealFromMealID(int MealID)
         {
             using IDbConnection _db = Connect();
-            Meal returnList = _db.QuerySingleOrDefault<Meal>
+            Meal returnList = _db.QuerySingle<Meal>
                 ("SELECT * FROM maaltijden WHERE MealID = @mealID",
                 new { mealID = MealID });
             return returnList;
