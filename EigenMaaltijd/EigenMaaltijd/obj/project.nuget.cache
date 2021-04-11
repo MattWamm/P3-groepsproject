@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "++OX3AqftFoXzNARb2tFe2x5dAWKkEorxOu4d8AEBuFvhcWmoxF9Zs2xeUL9QbXVwRKMk0iiIrY2lJXw3oOrrg==",
+  "dgSpecHash": "EHzeOKT0eVr5RihxUD6MwERxLzlTzoNFDEDxKtabTUgHNAuByRyorX5ygtE5frarR3uU65/ZZzzMXsA21qwjuw==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\P3-groepsproject\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj",
+  "projectFilePath": "C:\\Users\\Peter Jongman\\Desktop\\Test\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Peter Jongman\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\Peter Jongman\\.nuget\\packages\\carter\\5.2.0\\carter.5.2.0.nupkg.sha512",
@@ -34,5 +34,12 @@
     "C:\\Users\\Peter Jongman\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
     "C:\\Users\\Peter Jongman\\.nuget\\packages\\westwind.aspnetcore.livereload\\0.3.1\\westwind.aspnetcore.livereload.0.3.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Peter Jongman\\Desktop\\Test\\EigenMaaltijd\\EigenMaaltijd\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

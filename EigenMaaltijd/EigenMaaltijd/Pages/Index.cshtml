@@ -61,8 +61,29 @@
 
             </div>
 
+<<<<<<< Updated upstream
         </div>
 
+=======
+        @*<div class="row no-gutters" >
+            @foreach (IndexMeal IMeal in Model.IMeals)
+            {
+                    <div class="col col-lg-3">
+                        <div class="hover-container">
+                            <img class="img-fluid" src="@IMeal.img64Url" id="img_maaltijd" style=" width: 100px; height: 200px; object-fit: cover; "/>
+                            <div class="hover-content" id="@IMeal.meal.MealID.ToString()">
+                                    <p class="maaltijd_beschrijving">
+                                            <b> @IMeal.meal.Name</b>  <br>
+                                            @IMeal.user.Adres<br>
+                                            @IMeal.meal.Rating <br /><br />
+                                            <button type="submit"></button>
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+            }
+        </div>*@
+>>>>>>> Stashed changes
     </div>
 
 
@@ -132,6 +153,7 @@
         </div>
     </div>
 
+<<<<<<< Updated upstream
 
 
                 <div>
@@ -145,4 +167,6 @@
                         })</script>
 
                 </div>
+=======
+>>>>>>> Stashed changes
 </body>
