@@ -68,7 +68,25 @@ namespace EigenMaaltijd.Pages
         {
             new MealRepository().Search(SearchTerm);
         }
+        public void OnPostRating(int mealID, int rate)
+        {
+
+            int userid = (int)(ViewData["keepLogin"] = HttpContext.Session.GetInt32("keepLogin"));
+             
+           
+            if (ViewData["keepLogin"] != null)
+            {
+                new MealRepository().addRating(mealID, rate, userid);
+
+            }
+
+
+        }
+            
+        
     }
+
+ 
 
     public class IndexMeal
     {

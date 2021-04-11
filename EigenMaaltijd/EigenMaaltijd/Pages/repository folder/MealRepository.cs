@@ -128,13 +128,21 @@ namespace EigenMaaltijd.Pages
             return 0;
         }
 
-        public float addRating(int mealID, int Rating)
+        public int addRating(int mealID, int Rating, int userID)
         {
 
-            return 0;
+            using IDbConnection _db = Connect();
+
+            int rows = _db.Execute
+                (
+                "INSERT INTO rating (MealID, UserID, Rating) VALUES (@mealID, @userID, @rating)",
+                new { mealID = mealID,  rating = Rating, userID = userID }
+                );
+            return rows;
+
         }
 
-        public float ChangeRating(int mealID, int Rating)
+        public int ChangeRating(int mealID, int Rating)
         {
 
             return 0;
