@@ -7,18 +7,8 @@
         <div class="grid-container">
             <div class="grid-item-1">
                 <h2 class="titel">@Model.Name</h2>
-                <div style="margin-left: 70px" class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                </div><p>6,2/10 (13 Reviews)</p>
+                <p>
+                 </p>
             </div>
 
             <div class="grid-item-2"></div>
@@ -55,18 +45,37 @@
                     <input type="number" id="quantity" name="quantity" min="1" max="@Model.Portions">
                     <input type="submit" name="Bestellen">
                 </form>
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                </div>
+                <form method="post" asp-page-handler="Rating" id="ratingform">
+
+                    <div class="rate" id="rating_group">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text">5 stars</label>
+
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+
+                        <input type="hidden" name="mealID" value="@Model.MealID" id="hidden-input" />
+
+                        <button type="submit" id="secret_submit" style="visibility:hidden"></button>
+
+                    </div>
+                </form>
+
+                <script type="text/javascript">
+                    var form = document.getElementById("ratingform");
+                    console.log(document.getElementById("secret_submit"));
+                    document.getElementById("rating_group").addEventListener("click", function () {
+                        form.submit();
+                    });</script>
             </div>
 
             <div class="grid-item-6">
