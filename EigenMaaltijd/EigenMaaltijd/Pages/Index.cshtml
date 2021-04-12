@@ -35,22 +35,24 @@
 
     <div class="container-fluid" id="container_index_3">
 
-        <div class="row no-gutters" >
+        <div class="row no-gutters">
             @foreach (IndexMeal IMeal in Model.IMeals)
             {
-                    <div class="col col-lg-3">
-                        <div class="hover-container">
-                            <img class="img-fluid" src="@IMeal.img64Url" id="img_maaltijd" style=" width: 100px; height: 200px; object-fit: cover; "/>
-                            <div class="hover-content" id="@IMeal.meal.MealID.ToString()">
-                                    <p class="maaltijd_beschrijving">
-                                            <b> @IMeal.meal.Name</b>  <br>
-                                            @IMeal.user.Adres<br>
-                                            @IMeal.meal.Rating <br /><br />
-                                            <button type="submit"></button>
-                                    </p>
-                            </div>
+                <div class="col col-lg-3">
+                    <div class="hover-container">
+                        <img class="img-fluid" src="@IMeal.img64Url" id="img_maaltijd" style=" width: 100px; height: 200px; object-fit: cover; " />
+                        <div class="hover-content" id="@IMeal.meal.MealID">
+
+                            <p class="maaltijd_beschrijving">
+                                <b> @IMeal.meal.Name</b>  <br>
+                                @IMeal.user.Adres<br>
+                                ★ @IMeal.avgRating
+                                <br /><br />
+                                <i>*Klik voor meer informatie</i>
+                            </p>
                         </div>
                     </div>
+                </div>
             }
         </div>
     </div>
@@ -58,7 +60,6 @@
     <div class="popup" id="popup">
 
         <div class="popup-content" id="popup_content">
-
             <div class="grid-container">
                 <div class="grid-item-1">
                     <h2 class="titel">Stampot boerenkool met rookworst</h2>
@@ -78,9 +79,11 @@
 
                 <div class="grid-item-2"></div>
                 <div class="grid-item-3">
-                    <button type="button" id="btn_close" class="close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <form method="post">
+                        <button type="submit" id="btn_close" class="close" name="close" asp-page-handler="Close">
+                            <span aria-hidden="false" name="close">&times;</span>
+                        </button>
+                    </form>
                 </div>
 
                 <div class="grid-item-4">
@@ -100,33 +103,49 @@
                                 }
                         }
                     </ul>
-                    <p>€ 3,00 per portie</p>
+                    <p>€ per portie</p>
                     <h4>Aantal porties:</h4>
                     <form class="Bestellen" method="post">
                         <input type="number" id="quantity" name="quantity" min="1" max="">
                         <input type="submit" asp-page-handler="bestel" asp-route-mealID="@Model.ClickedMeal.MealID" asp-route-userID="@Model.ClickedMeal.UserID" id="Bestellen">
                     </form>
-                    <div class="rate">
-                        <input type="radio" id="star5" name="rate" value="5" />
-                        <label for="star5" title="text">5 stars</label>
-                        <input type="radio" id="star4" name="rate" value="4" />
-                        <label for="star4" title="text">4 stars</label>
-                        <input type="radio" id="star3" name="rate" value="3" />
-                        <label for="star3" title="text">3 stars</label>
-                        <input type="radio" id="star2" name="rate" value="2" />
-                        <label for="star2" title="text">2 stars</label>
-                        <input type="radio" id="star1" name="rate" value="1" />
-                        <label for="star1" title="text">1 star</label>
-                    </div>
-                </div>
+                    <form method="post" asp-page-handler="Rating" id="ratingform">
 
+                        <div class="rate" id="rating_group">
+                            <input type="radio"  id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+
+                            <input type="radio"  id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+
+                            <input type="radio"  id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+
+                            <input type="radio"  id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+
+                            <input type="radio"  id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+
+                            <input type="hidden" name="mealID" value="3" id="hidden-input" />
+
+                            <button type="submit" id="secret_submit" style="visibility:hidden"></button>
+
+                        </div>
+                    </form>
+                </div>
             </div>
 
 
         </div>
+ 
 
-
-
+        <script type="text/javascript">
+            var form = document.getElementById("ratingform");
+            console.log(document.getElementById("secret_submit"));
+            document.getElementById("rating_group").addEventListener("click", function () {
+                form.submit();
+            });</script>
 
         <script>
             console.log('Hover content elements', document.getElementsByClassName(".hover-content"));
@@ -135,7 +154,7 @@
                 var id = hoverContentElements[i].id
                 var hoverContent = hoverContentElements[i]
                 hoverContentElements[i].addEventListener("click", function ja() {
-                    var item1 = this.id
+                    var item1 = this.id 
                     $.ajax({
                         type: "POST",
                         url: "/Index?handler=List",
@@ -163,9 +182,6 @@
                         }
                     })
 
-                })
-                document.querySelector(".close").addEventListener("click", function () {
-                    document.querySelectr(".popup").style.display = "none";
                 })
             }
 

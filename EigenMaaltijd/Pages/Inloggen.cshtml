@@ -1,0 +1,76 @@
+﻿@page
+@model EigenMaaltijd.Pages.InloggenModel
+@{
+
+}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="~/css/EigenMaaltijd.css">
+    <link rel="stylesheet" href="~/css/inloggen.css">
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+
+    <div class="container-fluid" id="container_inloggen_1">
+        <nav class="navbar navbar-expand" id="nav">
+            <a class="navbar-brand" asp-page="/Index"><img src="~/img/Testlogo.png" height="35" width="140" alt="Testlogo EigenMaaltijd" id="Testlogo" /></a>
+
+            <form class="form" id="form_zoekbalk">
+                <input class="form-control" type="search" placeholder="Zoeken naar gerecht..." id="input_zoekbalk">
+            </form>
+        </nav>
+    </div>
+
+    @* login *@
+
+    <div class="split left">
+        <form method="post">
+            <h1 class="head">Inloggen</h1>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input asp-for="LoginData.Email" class="form-control" id="email" placeholder="Email" />
+            </div>
+            <div class="form-group">
+                <label for="wachtwoord">Wachtwoord</label>
+                <input asp-for="LoginData.Password" class="form-control" id="Wachtwoord" placeholder="Wachtwoord" />
+            </div>
+
+            <button type="submit" id="button" class="btn btn-primary btn-block" asp-page-handler="Login">Inloggen</button>
+        </form>
+        <div class="centered">
+        </div>
+    </div>
+
+    @* register *@
+
+    <div class="split right">
+        <form method="post">
+            <h1 class="head">Nog geen account?</h1>
+            <div class="form-group">
+                <label for="email">Naam</label>
+                <input asp-for="UserData.UserName" class="form-control" id="email" placeholder="Naam" />
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input asp-for="RegisterData.Email" class="form-control" id="email" placeholder="Email" />
+            </div>
+
+            <div class="form-group">
+                <label for="wachtwoord">Wachtwoord</label>
+                <input asp-for="RegisterData.Password" class="form-control" id="Wachtwoord" placeholder="Wachtwoord" />
+            </div>
+
+            <div class="form-group">
+                <label for="wachtwoord">Wachtwoord bevestigen</label>
+                <input asp-for="RegisterData.PassConfirm" class="form-control" id="WachtwoordConfirm" placeholder="Wachtwoord" />
+            </div>
+
+            <button type="submit" id="button" class="btn btn-primary btn-block" asp-page-handler="Register">Account aanmaken</button>
+            </form>
+            <div class="centered"></div>
+    </div>
+</body>

@@ -387,151 +387,77 @@ C:\Users\matti\Desktop\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\ne
 C:\Users\matti\Desktop\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Microsoft.Web.Infrastructure.dll
 C:\Users\matti\Desktop\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\ZoekMaaltijd.cshtml.g.cs
 C:\Users\matti\Desktop\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Shared\_PartialPopup.cshtml.g.cs
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\appsettings.Development.json
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\appsettings.json
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\EigenMaaltijd.exe
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\EigenMaaltijd.deps.json
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\EigenMaaltijd.runtimeconfig.json
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\EigenMaaltijd.runtimeconfig.dev.json
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\EigenMaaltijd.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\ref\EigenMaaltijd.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\EigenMaaltijd.pdb
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\EigenMaaltijd.Views.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\EigenMaaltijd.Views.pdb
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\BouncyCastle.Crypto.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Carter.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Dapper.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\FluentValidation.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Google.Protobuf.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\K4os.Compression.LZ4.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\K4os.Compression.LZ4.Streams.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\K4os.Hash.xxHash.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Web.Razor.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Web.Helpers.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Web.WebPages.Deployment.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Web.WebPages.Razor.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Web.WebPages.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Microsoft.OpenApi.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Microsoft.Web.Infrastructure.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\MySql.Data.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Ubiety.Dns.Core.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Zstandard.Net.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\MySqlConnector.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Newtonsoft.Json.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Renci.SshNet.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\SshNet.Security.Cryptography.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Westwind.AspNetCore.LiveReload.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.csprojAssemblyReference.cache
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.AssemblyInfoInputs.cache
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.AssemblyInfo.cs
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.csproj.CoreCompileInputs.cache
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.RazorAssemblyInfo.cache
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.RazorAssemblyInfo.cs
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\staticwebassets\EigenMaaltijd.StaticWebAssets.Manifest.cache
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\staticwebassets\EigenMaaltijd.StaticWebAssets.xml
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\scopedcss\bundle\EigenMaaltijd.styles.css
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.TagHelpers.input.cache
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.TagHelpers.output.cache
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.RazorCoreGenerate.cache
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\EditProfile.cshtml.g.cs
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Inloggen.cshtml.g.cs
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\MijnProfiel.cshtml.g.cs
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\PlaatsGerecht.cshtml.g.cs
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Shared\_PartialPopup.cshtml.g.cs
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Winkelwagen.cshtml.g.cs
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\ZoekMaaltijd.cshtml.g.cs
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.RazorTargetAssemblyInfo.cache
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.RazorTargetAssemblyInfo.cs
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.Views.pdb
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.csproj.CopyComplete
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\ref\EigenMaaltijd.dll
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.pdb
-C:\Users\Peter Jongman\Desktop\Eigenmaaltijd laatste versie\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.genruntimeconfig.cache
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\appsettings.Development.json
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\appsettings.json
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\EigenMaaltijd.exe
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\EigenMaaltijd.deps.json
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\EigenMaaltijd.runtimeconfig.json
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\EigenMaaltijd.runtimeconfig.dev.json
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\EigenMaaltijd.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\ref\EigenMaaltijd.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\EigenMaaltijd.pdb
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\EigenMaaltijd.Views.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\EigenMaaltijd.Views.pdb
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\BouncyCastle.Crypto.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Carter.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Dapper.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\FluentValidation.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Google.Protobuf.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\K4os.Compression.LZ4.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\K4os.Compression.LZ4.Streams.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\K4os.Hash.xxHash.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Web.Razor.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Web.Helpers.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Web.WebPages.Deployment.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Web.WebPages.Razor.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Web.WebPages.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Microsoft.OpenApi.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Microsoft.Web.Infrastructure.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\MySql.Data.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Ubiety.Dns.Core.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Zstandard.Net.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\MySqlConnector.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Newtonsoft.Json.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Renci.SshNet.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\SshNet.Security.Cryptography.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Westwind.AspNetCore.LiveReload.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.csprojAssemblyReference.cache
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.GeneratedMSBuildEditorConfig.editorconfig
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.AssemblyInfoInputs.cache
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.AssemblyInfo.cs
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.csproj.CoreCompileInputs.cache
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.MvcApplicationPartsAssemblyInfo.cache
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.RazorAssemblyInfo.cache
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.RazorAssemblyInfo.cs
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\staticwebassets\EigenMaaltijd.StaticWebAssets.Manifest.cache
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\staticwebassets\EigenMaaltijd.StaticWebAssets.xml
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\scopedcss\bundle\EigenMaaltijd.styles.css
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.TagHelpers.input.cache
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.TagHelpers.output.cache
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.RazorCoreGenerate.cache
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\EditProfile.cshtml.g.cs
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Inloggen.cshtml.g.cs
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\MijnProfiel.cshtml.g.cs
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\PlaatsGerecht.cshtml.g.cs
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Shared\_PartialPopup.cshtml.g.cs
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Winkelwagen.cshtml.g.cs
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\ZoekMaaltijd.cshtml.g.cs
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.RazorTargetAssemblyInfo.cache
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.RazorTargetAssemblyInfo.cs
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.Views.pdb
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.csproj.CopyComplete
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\ref\EigenMaaltijd.dll
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.pdb
-D:\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.genruntimeconfig.cache
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\appsettings.json
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\EigenMaaltijd.exe
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\EigenMaaltijd.deps.json
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\EigenMaaltijd.runtimeconfig.json
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\EigenMaaltijd.runtimeconfig.dev.json
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\EigenMaaltijd.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\ref\EigenMaaltijd.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\EigenMaaltijd.pdb
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\EigenMaaltijd.Views.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\EigenMaaltijd.Views.pdb
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\BouncyCastle.Crypto.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Carter.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Dapper.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\FluentValidation.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Google.Protobuf.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\K4os.Compression.LZ4.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\K4os.Hash.xxHash.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Web.Razor.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Web.Helpers.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Web.WebPages.Deployment.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Web.WebPages.Razor.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Web.WebPages.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Microsoft.Web.Infrastructure.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\MySql.Data.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Ubiety.Dns.Core.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Zstandard.Net.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\MySqlConnector.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Renci.SshNet.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\SshNet.Security.Cryptography.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\Westwind.AspNetCore.LiveReload.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.csprojAssemblyReference.cache
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.AssemblyInfoInputs.cache
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.AssemblyInfo.cs
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.csproj.CoreCompileInputs.cache
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.RazorAssemblyInfo.cache
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.RazorAssemblyInfo.cs
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\staticwebassets\EigenMaaltijd.StaticWebAssets.Manifest.cache
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\staticwebassets\EigenMaaltijd.StaticWebAssets.xml
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\scopedcss\bundle\EigenMaaltijd.styles.css
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.TagHelpers.input.cache
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.TagHelpers.output.cache
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.RazorCoreGenerate.cache
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\EditProfile.cshtml.g.cs
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Inloggen.cshtml.g.cs
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\MijnProfiel.cshtml.g.cs
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\PlaatsGerecht.cshtml.g.cs
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Shared\_PartialPopup.cshtml.g.cs
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.RazorTargetAssemblyInfo.cache
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.RazorTargetAssemblyInfo.cs
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.Views.pdb
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.csproj.CopyComplete
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\ref\EigenMaaltijd.dll
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.pdb
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.genruntimeconfig.cache
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\ProfielPagina.cshtml.g.cs
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Winkelwagen.cshtml.g.cs
