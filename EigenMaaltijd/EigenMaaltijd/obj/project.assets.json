@@ -1178,11 +1178,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Peter Jongman\\Desktop\\Test\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj",
+      "projectUniqueName": "D:\\GitHub\\P3-groepsproject\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj",
       "projectName": "EigenMaaltijd",
-      "projectPath": "C:\\Users\\Peter Jongman\\Desktop\\Test\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj",
+      "projectPath": "D:\\GitHub\\P3-groepsproject\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj",
       "packagesPath": "C:\\Users\\Peter Jongman\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Peter Jongman\\Desktop\\Test\\EigenMaaltijd\\EigenMaaltijd\\obj\\",
+      "outputPath": "D:\\GitHub\\P3-groepsproject\\EigenMaaltijd\\EigenMaaltijd\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\Microsoft\\Xamarin\\NuGet\\"
@@ -1263,7 +1263,7 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Peter Jongman\\Desktop\\Test\\EigenMaaltijd\\EigenMaaltijd\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+      "message": "Problem reading the cache file D:\\GitHub\\P3-groepsproject\\EigenMaaltijd\\EigenMaaltijd\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
 }

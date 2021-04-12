@@ -2,37 +2,69 @@
 @model EigenMaaltijd.Pages.WinkelwagenModel
 @{
 }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/EigenMaaltijd.css">
+    <link rel="stylesheet" href="css/Pop-Up.css">
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <title></title>
+</head>
 
 <body>
 
-    <div>
-        <h1>Send to Gmail</h1>
+    <div class="container-fluid" id="container_index_1">
+        <nav class="navbar navbar-expand" id="nav">
+            <a class="navbar-brand" asp-page="/Index"><img src="~/img/Testlogo.png" height="35" width="140" alt="Testlogo EigenMaaltijd" id="Testlogo" /></a>
 
-        <h4>Email</h4>
+            <form class="form" id="form_zoekbalk">
+                <input class="form-control" type="search" placeholder="Zoeken naar gerecht..." id="input_zoekbalk">
+            </form>
+            @if (Model.LogUser == null)
+            {
+                <a class="navbar" id="aanmelden" asp-page="/Inloggen">Aanmelden</a>
+            }
+            else
+            {
 
-        <form method="post">
-            <table>
-                <tr>
-                    <td>To</td>
-                    <td><input type="text" asp-for="sendmail.To" placeholder="Enter Email Id ..." /></td>
+                <a class="navbar" asp-page-handler="Logout">Afmelden</a>
+            }
 
-                </tr>
-                <tr>
-                    <td>Subject</td>
-                    <td><input type="text" asp-for="sendmail.Subject" placeholder="Enter Subject ..." /></td>
+            <a class="navbar" id="Poppetje_logo" asp-page="/MijnProfiel"><img src="~/img/Profiellogo.png" height="35" width="35" alt="Logo Mijn Profiel" id="Profiellogo" /></a>
+            <a class="navbar" id="Poppetje_logo" asp-page="/Winkelwagen"><img src="~/img/Profiellogo.png" height="35" width="35" alt="Logo Mijn Profiel" id="Profiellogo" /></a>
 
-                </tr>
-                <tr>
-                    <td>Body</td>
-                    <td><textarea asp-for="sendmail.Body" cols="5" rows="25" placeholder="Enter Text Here ..."></textarea></td>
 
-                </tr>
-                <tr>
-                    <td><input type="submit" class="btn-success" value="Send Mail ..." /></td>
-                    <td>@ViewData["Message"]</td>
-                </tr>
-            </table>
-        </form>
-
+        </nav>
     </div>
-</body>
+
+        <div>
+            <h1>Send to Gmail</h1>
+
+            <h4>Email</h4>
+
+            <form method="post">
+                <table>
+                    <tr>
+                        <td>To</td>
+                        <td><input type="text" asp-for="sendmail.To" placeholder="Enter Email Id ..." /></td>
+
+                    </tr>
+                    <tr>
+                        <td>Subject</td>
+                        <td><input type="text" asp-for="sendmail.Subject" placeholder="Enter Subject ..." /></td>
+
+                    </tr>
+                    <tr>
+                        <td>Body</td>
+                        <td><textarea asp-for="sendmail.Body" cols="5" rows="25" placeholder="Enter Text Here ..."></textarea></td>
+
+                    </tr>
+                    <tr>
+                        <td><input type="submit" class="btn-success" value="Send Mail ..." /></td>
+                        <td>@ViewData["Message"]</td>
+                    </tr>
+                </table>
+            </form>
+
+        </div>
+    </body>

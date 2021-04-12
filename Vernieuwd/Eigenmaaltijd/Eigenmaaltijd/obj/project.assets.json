@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Peter Jongman\\Desktop\\Test\\Vernieuwd\\Eigenmaaltijd\\Eigenmaaltijd\\Eigenmaaltijd.csproj",
+      "projectUniqueName": "D:\\GitHub\\P3-groepsproject\\Vernieuwd\\Eigenmaaltijd\\Eigenmaaltijd\\Eigenmaaltijd.csproj",
       "projectName": "Eigenmaaltijd",
-      "projectPath": "C:\\Users\\Peter Jongman\\Desktop\\Test\\Vernieuwd\\Eigenmaaltijd\\Eigenmaaltijd\\Eigenmaaltijd.csproj",
+      "projectPath": "D:\\GitHub\\P3-groepsproject\\Vernieuwd\\Eigenmaaltijd\\Eigenmaaltijd\\Eigenmaaltijd.csproj",
       "packagesPath": "C:\\Users\\Peter Jongman\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Peter Jongman\\Desktop\\Test\\Vernieuwd\\Eigenmaaltijd\\Eigenmaaltijd\\obj\\",
+      "outputPath": "D:\\GitHub\\P3-groepsproject\\Vernieuwd\\Eigenmaaltijd\\Eigenmaaltijd\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\Microsoft\\Xamarin\\NuGet\\"
