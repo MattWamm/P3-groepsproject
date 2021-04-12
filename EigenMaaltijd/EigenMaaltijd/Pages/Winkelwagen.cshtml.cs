@@ -22,7 +22,7 @@ namespace EigenMaaltijd.Pages
             string body = sendmail.Body;
             MailMessage mm = new MailMessage();
             mm.To.Add(to);
-            mm.Subject = subject;
+            mm.Subject = "Bestelling Eigenmaaltijd";
             mm.Body = body;
             mm.IsBodyHtml = false;
             mm.From = new MailAddress("eigenmaaltijd@gmail.com");
@@ -33,5 +33,58 @@ namespace EigenMaaltijd.Pages
             await smtp.SendMailAsync(mm);
             ViewData["Message"] = "The Mail Has Been Sent To " + sendmail.To;
         }
+
+        public List<IndexMeal> IMeals
+        {
+            get
+            {
+                List<IndexMeal> returnList = new List<IndexMeal>();
+                foreach (Meal meal in new MealRepository().Search(SearchTerm))
+                {
+                    IndexMeal IMeal = new IndexMeal();
+                    IMeal.meal = meal;
+                    IMeal.user = new UserRepository().getUserFromID(meal.UserID);
+                    returnList.Add(IMeal);
+
+                    String img64 = Convert.ToBase64String(meal.Img);
+                    String img64Url = string.Format("data:image/" + "jpg" + ";base64,{0}", img64);
+                    IMeal.img64Url = img64Url;
+
+                }
+                return returnList;
+            }
+
+        }
+        public User LogUser
+        {
+            get
+            {
+                if (ViewData["keepLogin"] != null)
+                {
+                    return new UserRepository().getUserFromID((int)ViewData["keepLogin"]);
+                }
+                return null;
+
+            }
+        }
+        [BindProperty(SupportsGet = true)]
+        public string SearchTerm { get; set; }
+        public string ButtonTextLogin
+        {
+            get
+            {
+                if (LogUser != null)
+                {
+                    return "Afmelden";
+                }
+                return "Aanmelden";
+            }
+        }
+
+        [BindProperty]
+
+        public Shoppinglist Shoppinglist { get; set; }
+
+
     }
 }

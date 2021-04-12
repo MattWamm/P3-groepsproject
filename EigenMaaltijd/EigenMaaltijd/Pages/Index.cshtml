@@ -24,6 +24,7 @@
                 <input class="form-control" type="search" placeholder="Zoeken naar gerecht..." id="input_zoekbalk" asp-for="SearchTerm">
             </form>
             <a class="navbar" id="aanmelden" asp-page="/Inloggen"><img src="~/img/Profiellogo.png" height="20" width="20" alt="Logo Mijn Profiel" id="Profiellogo" /> &nbsp Aanmelden</a>
+            <a class="navbar" id="aanmelden" asp-page="/Winkelwagen"><img src="~/img/Winkelwagen.png" height="20" width="20" alt="Logo Mijn Profiel" id="Profiellogo" /> &nbsp Winkelwagen</a>
 
         </nav>
     </div>
@@ -101,9 +102,9 @@
                     </ul>
                     <p>€ 3,00 per portie</p>
                     <h4>Aantal porties:</h4>
-                    <form class="Bestellen">
+                    <form class="Bestellen" method="post">
                         <input type="number" id="quantity" name="quantity" min="1" max="">
-                        <input type="submit" name="Bestellen">
+                        <input type="submit" asp-page-handler="bestel" asp-route-mealID="@Model.ClickedMeal.MealID" asp-route-userID="@Model.ClickedMeal.UserID" id="Bestellen">
                     </form>
                     <div class="rate">
                         <input type="radio" id="star5" name="rate" value="5" />

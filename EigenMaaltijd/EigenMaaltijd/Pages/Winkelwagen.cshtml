@@ -3,35 +3,195 @@
 @{
 }
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/EigenMaaltijd.css" />
+    <link rel="stylesheet" href="~/css/popup.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <title>Home</title>
+</head>
+<style>
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        margin: 0 -16px;
+    }
+
+    .col-25 {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+    }
+
+    .col-50 {
+        -ms-flex: 50%; /* IE10 */
+        flex: 50%;
+    }
+
+    .col-75 {
+        -ms-flex: 75%; /* IE10 */
+        flex: 75%;
+    }
+
+    .col-25,
+    .col-50,
+    .col-75 {
+        padding: 16px 16px;
+    }
+
+    .container {
+        background-color: #f2f2f2;
+        padding: 5px 20px 15px 20px;
+    }
+
+    input[type=text] {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    label {
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .icon-container {
+        margin-bottom: 20px;
+        padding: 7px 0;
+        font-size: 24px;
+    }
+
+    .btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px;
+        margin: 10px 0;
+        border: none;
+        width: 100%;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 17px;
+    }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+    a {
+        color: #2196F3;
+    }
+
+    hr {
+        border: 1px solid lightgrey;
+    }
+
+    span.price {
+        float: right;
+        color: grey;
+    }
+</style>
 <body>
-    <div>
-        <h1>Send to Gmail</h1>
 
-        <h4>Email</h4>
+    <div class="container-fluid" id="container_index_1">
+        <nav class="navbar navbar-expand" id="nav">
+            <a class="navbar-brand" asp-page="/Index"><img src="~/img/Testlogo.png" height="35" width="140" alt="Testlogo EigenMaaltijd" id="Testlogo" /></a>
 
-        <form method="post">
-            <table>
-                <tr>
-                    <td>To</td>
-                    <td><input type="text" asp-for="sendmail.To" placeholder="Enter Email Id ..." /></td>
+            <form class="form" id="form_zoekbalk" method="post" asp-page-handler="Search" asp-page="/ZoekMaaltijd">
+                <input class="form-control" type="search" placeholder="Zoeken naar gerecht..." id="input_zoekbalk" asp-for="SearchTerm">
+            </form>
+            <a class="navbar" id="aanmelden" asp-page="/Inloggen"><img src="~/img/Profiellogo.png" height="20" width="20" alt="Logo Mijn Profiel" id="Profiellogo" /> &nbsp Aanmelden</a>
+            <a class="navbar" id="aanmelden" asp-page="/Winkelwagen"><img src="~/img/Winkelwagen.png" height="20" width="20" alt="Logo Mijn Profiel" id="Profiellogo" /> &nbsp Winkelwagen</a>
 
-                </tr>
-                <tr>
-                    <td>Subject</td>
-                    <td><input type="text" asp-for="sendmail.Subject" placeholder="Enter Subject ..." /></td>
-
-                </tr>
-                <tr>
-                    <td>Body</td>
-                    <td><textarea asp-for="sendmail.Body" cols="5" rows="25" placeholder="Enter Text Here ..."></textarea></td>
-
-                </tr>
-                <tr>
-                    <td><input type="submit" class="btn-success" value="Send Mail ..." /></td>
-                    <td>@ViewData["Message"]</td>
-                </tr>
-            </table>
-        </form>
-
+        </nav>
     </div>
+
+    <div class="row" >
+        <div class="col-75">
+            <div class="container">
+                <form action="/action_page.php" method="post">
+                    <div asp-for="sendmail.Body" class="container">
+                        <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i></span></h4>
+                        <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+                        <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+                        <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+                        <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+                        <hr>
+                        <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+                    </div>
+                    <div class="row">
+                        <div class="col-50">
+                            <h3>Bestel informatie</h3>
+                            <label for="fname"><i class="fa fa-user"></i>Naam</label>
+                            <input type="text" id="fname" name="firstname">
+
+                            <label for="email"><i class="fa fa-envelope"></i>Email</label>
+                            <input type="text" asp-for="sendmail.To" id="email" name="email">
+
+                            <label for="adr"><i class="fa fa-address-card-o"></i>Adres</label>
+                            <input type="text" id="adr" name="address">
+
+                            <label for="city"><i class="fa fa-institution"></i>Plaats</label>
+                            <input type="text" id="city" name="city">
+
+                            <label for="state"><i class="fa fa-flag"></i>Land</label>
+                            <input type="text" id="state" name="state">
+
+                            <label for="zip"><i class="fa fa-envelope-open"></i>Postcode</label>
+                            <input type="text" id="zip" name="zip">
+                        </div>
+                    </div>
+
+                    <div class="col-50">
+                        <h3>Payment</h3>
+                        <label for="fname">Accepted Payments</label>
+                        <div class="icon-container">
+                            <i class="fa fa-cc-visa" style="color:navy;"></i>
+                            <i class="fa fa-cc-amex" style="color:blue;"></i>
+
+                        </div>
+                    </div>
+                    <input type="submit" value="Continue to checkout" class="btn">
+                    <p>@ViewData["Message"]</p>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+        <div>
+            <form method="post">
+                <table>
+                    <tr>
+                        <td>To</td>
+                        <td><input type="text" asp-for="sendmail.To" placeholder="Enter Email Id ..." /></td>
+
+                    </tr>
+                    <tr>
+                        <td>Subject</td>
+                        <td><input type="text" asp-for="sendmail.Subject" placeholder="Enter Subject ..." /></td>
+
+                    </tr>
+                    <tr>
+                        <td>Body</td>
+                        <td><textarea asp-for="sendmail.Body" cols="5" rows="25" placeholder="Enter Text Here ..."></textarea></td>
+
+                    </tr>
+                    <tr>
+                        <td><input type="submit" class="btn-success" value="Send Mail ..." /></td>
+                        <td>@ViewData["Message"]</td>
+                    </tr>
+                </table>
+            </form>
+
+        </div>
 </body>

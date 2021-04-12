@@ -129,5 +129,18 @@ namespace EigenMaaltijd.Pages
                 );
             return rows ;
         }
+
+        //public void Plaatsbestelling()
+        //{ 
+        //    using IDbConnection _db = Connect();
+        //        int rows = _db.Execute
+        //                (
+        //                "INSERT INTO bestelinformatie()",
+        //                new
+        //                {
+        //                    Hoeveelheid = Hoeveelheid,
+        //                });
+
+        //}
     }
 }

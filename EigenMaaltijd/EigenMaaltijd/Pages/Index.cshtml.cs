@@ -149,6 +149,15 @@ namespace EigenMaaltijd.Pages
             return Partial("_PartialPopup", ClickedMeal);
         }
 
+        public void OnPostbestel(int mealID, int userID, int Quantity)
+        {
+            DateTime ordertime = DateTime.Now;
+            Shoppinglist Winkelwagen = new Shoppinglist() 
+            {MealID = mealID, UserID = userID, Hoeveelheid = Quantity, Date = ordertime};
+        }
+
+
+
 
     }
 
