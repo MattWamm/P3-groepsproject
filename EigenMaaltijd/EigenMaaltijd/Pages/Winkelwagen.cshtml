@@ -1,0 +1,37 @@
+﻿@page
+@model EigenMaaltijd.Pages.WinkelwagenModel
+@{
+}
+
+<body>
+    <div>
+        <h1>Send to Gmail</h1>
+
+        <h4>Email</h4>
+
+        <form method="post">
+            <table>
+                <tr>
+                    <td>To</td>
+                    <td><input type="text" asp-for="sendmail.To" placeholder="Enter Email Id ..." /></td>
+
+                </tr>
+                <tr>
+                    <td>Subject</td>
+                    <td><input type="text" asp-for="sendmail.Subject" placeholder="Enter Subject ..." /></td>
+
+                </tr>
+                <tr>
+                    <td>Body</td>
+                    <td><textarea asp-for="sendmail.Body" cols="5" rows="25" placeholder="Enter Text Here ..."></textarea></td>
+
+                </tr>
+                <tr>
+                    <td><input type="submit" class="btn-success" value="Send Mail ..." /></td>
+                    <td>@ViewData["Message"]</td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+</body>

@@ -105,9 +105,10 @@
     <div class="container-fluid" id="container_plaatsgerecht_2">
         <h1><br></h1>
     </div>
-    <form method="post" enctype="multipart/form-data">
+    <form method="post" asp-page-handler="Plaats" enctype="multipart/form-data">
         <div class="container-fluid" id="container_plaatsgerecht_3">
-            <div class="segment flex vertical">
+     
+         <div class="segment flex vertical">
                 <h2>Gerecht plaatsen</h2>
                 <div class="grid col-g-2 wrap gap-s">
                     <div class="grid gap-l">
@@ -115,7 +116,7 @@
 
                             <div class="input flex vertical">
                                 <label>Naam gerecht:</label>
-                                <input asp-for="meal.Name" type="text" placeholder="Naam invoeren..." />
+                                <input asp-for="meal.Name" name="Name" type="text" placeholder="Naam invoeren..." />
                             </div>
                             <div class="count flex vertical">
                                 <label>Aantal porties:</label>
@@ -125,7 +126,7 @@
                                         <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
                                     </span>
                                     <span class="count">
-                                        <input asp-for="meal.Portions" type="number" id="portion-count" value="1" />
+                                        <input asp-for="meal.Portions" name="Portions" type="number" id="portion-count" value="1" />
                                     </span>
                                     <span class="icon plus">
                                         <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
@@ -139,42 +140,30 @@
                                 <label>Portiegrootte (in grammen):</label>
                                 <div class="flex align--center">
                                     <span class="count">
-                                        <input asp-for="meal.PortionSize" type="number" id="portion-size" value="100" />
+                                        <input asp-for="meal.PortionSize" name="PortionSize" type="number" id="portion-size" value="100" />
                                     </span>
                                 </div>
                             </div>
                         </div>
-
                         <div class="flex vertical">
-                            <span>Foto's</span>
-                            <div class="grid col-g-2 gap-s">
-                                <div class="featured-image upload"><input type="file" asp-for="test"/></div>
-                                <div class="grid col-g-2 gap-s">
-                                    <div class="upload"></div>
-                                    <div class="upload"></div>
-                                    <div class="upload"></div>
-                                    <div class="upload"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-
-                    <div class="flex vertical justify--between">
-                        <div class="flex vertical">
                             <table>
                                 <tr>
                                     <th>
-                                        <label for="ingevroren">Ingevroren:</label>
-                                        <select asp-for="meal.Ingevroren" id="ingevroren" name="ingevroren">
-                                            <option value="Ja">Ja</option>
-                                            <option value="Nee">Nee</option>
+                                        <label for="Ingevroren">ingevroren:</label>
+                                        <select asp-for="meal.Ingevroren" id="Ingevroren" name="Ingevroren">
+                                            <option value="false">Nee</option>
+                                            <option value="true">Ja</option>
                                         </select>
+
                                     </th>
+                                    
                                     <th>
-                                        <label for="ingevroren" id="betaling">Betaling:</label>
-                                        <select asp-for="meal.Betalingsmethode" id="betaling" name="betaling">
+                                        <label for="Betalingsmethode">Betaling:</label>
+                                        <select asp-for="meal.Betalingsmethode" id="Betalingsmethode" name="Betalingsmethode">
                                             <option value="Contant">Contant</option>
+                                            <option value="Contant">Tikkie</option>
+
                                         </select>
                                     </th>
                                 </tr>
@@ -188,14 +177,43 @@
                                     <th><button>Toevoegen</button></th>
                                 </tr>
                             </table>
+                            </div>
+
+                            <div class="flex vertical">
+                                <span>Foto's</span>
+                                <div class="grid col-g-2 gap-s">
+                                    <div class="featured-image upload"><input type="file" name="test" asp-for="test" /></div>
+                                    <div class="grid col-g-2 gap-s">
+                                        <div class="upload"></div>
+                                        <div class="upload"></div>
+                                        <div class="upload"></div>
+                                        <div class="upload"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="grid col-g-2 gap-s">
-                            <span>Totaal: €0,00</span>
-                            <button asp-page-handler="Plaats">Plaats het gerecht</button>
+
+                        <div class="flex vertical justify--between">
+                            <div class="flex vertical">
+
+                                <br />
+                                <span>Ingrediënten toevoegen:</span>
+                                <table>
+                                    <tr>
+                                        <th><input asp-for="meal.Ingredients" name="Ingredients"  type="text" placeholder="Ingrediënt..." /></th>
+                                       <th><input type="text" placeholder="Prijs..." /></th>
+                    <th><button>Toevoegen</button></th>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="grid col-g-2 gap-s">
+                                <span>Totaal: €0,00</span>
+                                <button asp-page-handler="Plaats">Plaats het gerecht</button>
+                            </div>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </form>

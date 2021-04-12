@@ -6,10 +6,12 @@
 
   <ItemGroup>
     <Compile Remove="Pages\Index1.cshtml.cs" />
+    <Compile Remove="Pages\ZoekMaaltijd.cshtml.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Remove="Pages\Index1.cshtml" />
+    <Content Remove="Pages\ZoekMaaltijd.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
