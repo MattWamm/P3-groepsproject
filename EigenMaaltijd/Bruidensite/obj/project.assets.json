@@ -8,23 +8,23 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Peter Jongman\\.nuget\\packages\\": {},
-    "E:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\ninob\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\P3-groepsproject\\EigenMaaltijd\\Bruidensite\\Bruidensite.csproj",
+      "projectUniqueName": "C:\\Users\\ninob\\Documents\\GitHub\\P3-groepsproject\\EigenMaaltijd\\Bruidensite\\Bruidensite.csproj",
       "projectName": "Bruidensite",
-      "projectPath": "D:\\GitHub\\P3-groepsproject\\EigenMaaltijd\\Bruidensite\\Bruidensite.csproj",
-      "packagesPath": "C:\\Users\\Peter Jongman\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\P3-groepsproject\\EigenMaaltijd\\Bruidensite\\obj\\",
+      "projectPath": "C:\\Users\\ninob\\Documents\\GitHub\\P3-groepsproject\\EigenMaaltijd\\Bruidensite\\Bruidensite.csproj",
+      "packagesPath": "C:\\Users\\ninob\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ninob\\Documents\\GitHub\\P3-groepsproject\\EigenMaaltijd\\Bruidensite\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "E:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Peter Jongman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ninob\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -68,7 +68,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

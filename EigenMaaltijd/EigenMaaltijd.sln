@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EigenMaaltijd", "EigenMaaltijd\EigenMaaltijd.csproj", "{2993E816-CFE5-4FB9-8690-34A7EF2D9E0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bruidensite", "Bruidensite\Bruidensite.csproj", "{7073FF53-22B2-4291-A6E1-FD87494EECD5}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{2993E816-CFE5-4FB9-8690-34A7EF2D9E0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2993E816-CFE5-4FB9-8690-34A7EF2D9E0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2993E816-CFE5-4FB9-8690-34A7EF2D9E0B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7073FF53-22B2-4291-A6E1-FD87494EECD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7073FF53-22B2-4291-A6E1-FD87494EECD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7073FF53-22B2-4291-A6E1-FD87494EECD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7073FF53-22B2-4291-A6E1-FD87494EECD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
