@@ -6,7 +6,7 @@
 
         <div class="grid-container">
             <div class="grid-item-1">
-                <h2 class="titel">Stampot boerenkool met rookworst</h2>
+                <h2 class="titel">@Model.Name</h2>
                 <div style="margin-left: 70px" class="rate">
                     <input type="radio" id="star5" name="rate" value="5" />
                     <label for="star5" title="text">5 stars</label>
@@ -23,17 +23,20 @@
 
             <div class="grid-item-2"></div>
             <div class="grid-item-3">
-                <button type="button" id="btn_close" class="close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <form method="post">
+                    <button type="submit" id="btn_close" class="close" name="close" asp-page-handler="Close">
+                        <span aria-hidden="false" name="close">&times;</span>
+                    </button>
+                </form>
             </div>
 
             <div class="grid-item-4">
-                <img class="Gerecht" src="~/img/Hutspot.png" width="700" height="500">
+
+                <img class="Gerecht" src="data:image/jpg;base64,@(Convert.ToBase64String(Model.Img))" alt="@Model.Img" width="700" height="500">
             </div>
 
             <div class="grid-item-5">
-                <h2>Stampot boerenkool met rookworst</h2>
+                <h2>@Model.Name</h2>
                 <p>Ingredienten:</p>
                 <ul>
 
@@ -46,10 +49,10 @@
                     }
                 </ul>
 
-                <p>€ 3,00 per portie</p>
-                <h4>Aantal porties:</h4>
-                <form class="Bestellen">
-                    <input type="number" id="quantity" name="quantity" min="1" max="">
+                <p>€ @Model.Prijs per portie</p>
+                <h4>Aantal porties: @Model.Portions</h4>
+                <form class="Bestellen" method="post" asp-page-handler="change">
+                    <input type="number" id="quantity" name="quantity" min="1" max="@Model.Portions">
                     <input type="submit" name="Bestellen">
                 </form>
                 <div class="rate">
@@ -66,6 +69,15 @@
                 </div>
             </div>
 
+            <div class="grid-item-6">
+                <a asp-page="/ProfielPagina">
+                    <form method="post" asp-page-handler="GetData">
+                        <b>Profiel</b>
+                    </form>
+                </a>
+            </div>
+
         </div>
 
     </div>
+

@@ -65,6 +65,7 @@ namespace EigenMaaltijd.Pages
         public void OnGet()
         {
             ViewData["keepLogin"] = HttpContext.Session.GetInt32("keepLogin");
+
         }
         public void OnPostSearch()
         {
@@ -88,6 +89,7 @@ namespace EigenMaaltijd.Pages
                         if (obj != null)
                         {
                             HttpContext.Session.SetInt32("ClickedMeal", Convert.ToInt32(obj.Item1));
+                            HttpContext.Session.SetInt32("postData", Convert.ToInt32(new MealRepository().GetMealFromMealID(Convert.ToInt32(obj.Item1)).UserID));
                             returnString = obj.Item1;
                         }
                     }
@@ -126,7 +128,8 @@ namespace EigenMaaltijd.Pages
                             Rating = meal.Rating,
                             Img = meal.Img,
                             Ingevroren = meal.Ingevroren,
-                            Betalingsmethode = meal.Betalingsmethode
+                            Betalingsmethode = meal.Betalingsmethode,
+                            Prijs = meal.Prijs
                         };
                         return CMeal;
                     }
@@ -144,12 +147,27 @@ namespace EigenMaaltijd.Pages
         
         }
 
+        public IActionResult OnPostClose()
+        {
+            return Page();
+        }
+
         public PartialViewResult OnGetMealPartial()
         {
             return Partial("_PartialPopup", ClickedMeal);
         }
 
+        
+        public IActionResult OnPostChange(int quantity)
+        {
+            Meal meal = new MealRepository().GetMealFromMealID(ClickedMeal.MealID);
 
+            meal.Portions -= quantity;
+
+            new MealRepository().ChangeMeal(meal);
+
+            return new PageResult();
+        }
     }
 
     public class ClickedMeal
@@ -164,6 +182,7 @@ namespace EigenMaaltijd.Pages
         public byte[] Img { get; set; }
         public bool Ingevroren { get; set; }
         public string Betalingsmethode { get; set; }
+        public string Prijs { get; set; }
     }
 
 
