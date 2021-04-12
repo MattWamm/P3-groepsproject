@@ -162,7 +162,7 @@
                                         <label for="Betalingsmethode">Betaling:</label>
                                         <select asp-for="meal.Betalingsmethode" id="Betalingsmethode" name="Betalingsmethode">
                                             <option value="Contant">Contant</option>
-                                            <option value="Contant">Tikkie</option>
+                                            <option value="Tikkie">Tikkie</option>
 
                                         </select>
                                     </th>
@@ -172,8 +172,8 @@
                             <span>Ingrediënten toevoegen:</span>
                             <table>
                                 <tr>
-                                    <th><input asp-for="meal.Ingredients" type="text" placeholder="Ingrediënt..." /></th>
-                                    <th><input asp-for="meal.Prijs" type="text" placeholder="Prijs..." /></th>
+                                    <th><input asp-for="meal.Ingredients" type="text" name="Ingredients" placeholder="Ingrediënt..." /></th>
+                                    <th><input asp-for="meal.Prijs" type="text" name="Prijs" placeholder="Prijs..." /></th>
                                     <th><button>Toevoegen</button></th>
                                 </tr>
                             </table>
@@ -197,7 +197,7 @@
                         <div class="flex vertical justify--between">
                             <div class="flex vertical">
 
-                                <br />
+                                @*<br />
                                 <span>Ingrediënten toevoegen:</span>
                                 <table>
                                     <tr>
@@ -206,7 +206,7 @@
                     <th><button>Toevoegen</button></th>
                                     </tr>
                                 </table>
-                            </div>
+                            </div>*@
 
                             <div class="grid col-g-2 gap-s">
                                 <span>Totaal: €0,00</span>

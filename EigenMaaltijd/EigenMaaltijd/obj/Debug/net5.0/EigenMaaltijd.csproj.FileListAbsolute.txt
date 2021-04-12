@@ -449,7 +449,6 @@ C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd
 C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
 C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Shared\_PartialPopup.cshtml.g.cs
 C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
-C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\ZoekMaaltijd.cshtml.g.cs
 C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
 C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
 C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.RazorTargetAssemblyInfo.cache
@@ -461,3 +460,4 @@ C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd
 C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.pdb
 C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\EigenMaaltijd.genruntimeconfig.cache
 C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\ProfielPagina.cshtml.g.cs
+C:\Users\Gebruiker\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\obj\Debug\net5.0\Razor\Pages\Winkelwagen.cshtml.g.cs

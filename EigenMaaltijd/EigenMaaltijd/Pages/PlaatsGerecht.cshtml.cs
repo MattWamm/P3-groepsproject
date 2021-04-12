@@ -42,21 +42,6 @@ namespace EigenMaaltijd.Pages
             return new PageResult();
         }
 
-        public void Ingredients()
-        {
-            Meal meel = meal;
-            //string what = meal.Ingredients;
-            //string[] whatList = what.Split(',');
-            //    string ever = "";
-            //foreach (string yes in whatList)
-            //{
-            //    ever = ever = "," + yes + ",";
-            //}
-            //meel.Ingredients = ever;
-
-            new MealRepository().AddMeal(meel);
-        }
-
         public IActionResult OnPostPlaats()
         {
             meal.UserID = LogUser.UserID;

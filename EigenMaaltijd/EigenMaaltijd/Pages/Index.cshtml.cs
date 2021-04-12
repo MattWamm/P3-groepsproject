@@ -103,7 +103,8 @@ namespace EigenMaaltijd.Pages
             returnString
             };
 
-                return new JsonResult(lstString);
+            return new JsonResult(lstString);
+        }
         public IActionResult OnPostRating(int mealID, int rate)
         {
             ViewData["keepLogin"] = HttpContext.Session.GetInt32("keepLogin");
@@ -146,7 +147,6 @@ namespace EigenMaaltijd.Pages
                             Ingredients = splits.ToList<string>(),
                             Portions = meal.Portions,
                             PortionSize = meal.PortionSize,
-                            Rating = meal.Rating,
                             Img = meal.Img,
                             Ingevroren = meal.Ingevroren,
                             Betalingsmethode = meal.Betalingsmethode,
@@ -213,15 +213,6 @@ namespace EigenMaaltijd.Pages
     {
         public string Item1 { get; set; }
     }
-
-    public class IndexMeal
-    {
-        public Meal meal { get; set; }
-        public User user { get; set; }
-        public String img64Url { get; set; }
-    }
-
-
 
         public class IndexMeal
         {

@@ -17,7 +17,6 @@ namespace EigenMaaltijd.Pages
         public string Betalingsmethode { get; set; }
         public string Prijs { get; set; }
         public byte[] Img { get; set; }
-  
 
     }
 }

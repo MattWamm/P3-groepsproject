@@ -148,15 +148,12 @@
                 <div class="col col-lg-3">
                     <div class="hover-container">
                         <img class="img-fluid" src="@IMeal.img64Url" id="img_maaltijd" style=" width: 100px; height: 200px; object-fit: cover; " />
-                        <div class="hover-content">
+                        <div class="hover-content" id="@IMeal.meal.MealID">
 
                             <p class="maaltijd_beschrijving">
                                 <b> @IMeal.meal.Name</b>  <br>
                                 @IMeal.user.Adres<br>
                                 ★ @IMeal.avgRating
-
-
-
                                 <br /><br />
                                 <i>*Klik voor meer informatie</i>
                             </p>
@@ -164,15 +161,10 @@
                     </div>
                 </div>
             }
-
         </div>
     </div>
 
     <div class="popup" id="popup">
-
-
-
-
 
     <div class="popup">
         <div class="popup-content" id="popup_content">
@@ -240,10 +232,7 @@
                         </div>
                     </form>
                 </div>
-
             </div>
-
-
         </div>
  
 
@@ -261,7 +250,7 @@
                 var id = hoverContentElements[i].id
                 var hoverContent = hoverContentElements[i]
                 hoverContentElements[i].addEventListener("click", function ja() {
-                    var item1 = this.id
+                    var item1 = this.id 
                     $.ajax({
                         type: "POST",
                         url: "/Index?handler=List",
