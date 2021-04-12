@@ -16,7 +16,7 @@ namespace EigenMaaltijd.Pages
         public bool Ingevroren { get; set; }
         public string Betalingsmethode { get; set; }
         public byte[] Img { get; set; }
-       
+  
 
     }
 }

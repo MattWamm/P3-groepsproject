@@ -151,6 +151,10 @@
                             <p class="maaltijd_beschrijving">
                                 <b> @IMeal.meal.Name</b>  <br>
                                 @IMeal.user.Adres<br>
+                                ★ @IMeal.avgRating
+
+
+
                                 <br /><br />
                                 <i>*Klik voor meer informatie</i>
                             </p>
@@ -240,12 +244,12 @@
             var form = document.getElementById("ratingform");
             console.log(document.getElementById("secret_submit"));
             document.getElementById("rating_group").addEventListener("click", function () {
-                console.log("asdf");
                 form.submit();
             });</script>
 
         <script>
-            console.log('Hover content elements', document.getElementsByClassName(".hover-content"));
+
+
 
             const hoverContentElements = document.getElementsByClassName("hover-content");
             for (var i = 0; i < hoverContentElements.length; i++) {

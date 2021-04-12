@@ -136,21 +136,37 @@ namespace EigenMaaltijd.Pages
             int rows = _db.Execute
                 (
                 "INSERT INTO rating (MealID, UserID, Rating) VALUES (@mealID, @userID, @rating)",
-                new { mealID = mealID,  rating = Rating, userID = userID }
+                new { mealID = mealID, rating = Rating, userID = userID }
                 );
             return rows;
+
+        }
+        public double GetAverageRating(int MealID)
+        {
+
+            using IDbConnection _db = Connect();
+
+            double AvgRating = _db.QuerySingleOrDefault<double>
+                (
+                "SELECT IFNULL(avg(Rating), 0) from rating WHERE MealID = @mealID",
+                new { mealID = MealID});
+            return AvgRating;
+
 
         }
 
         public int ChangeRating(int mealID, int Rating)
         {
 
-            return 0;
+            using IDbConnection _db = Connect();
+
+            int rows = _db.Execute
+                (
+                "UPDATE rating SET Rating = @rating WHERE mealID = @mealID",
+                new { rating = Rating, mealID = mealID }
+                );
+            return rows;
         }
-
-
-
-          
 
         public List<Meal> Search(string searchTerm)
         {

@@ -29,10 +29,13 @@ namespace EigenMaaltijd.Pages
                     String img64Url = string.Format("data:image/" + "jpg" + ";base64,{0}", img64);
                     IMeal.img64Url = img64Url;
 
+                    IMeal.avgRating = (int)Math.Round( new MealRepository().GetAverageRating(IMeal.meal.MealID));
+
+
                 }
                 return returnList;
             }
-        
+
         }
         public User LogUser
         {
@@ -60,6 +63,7 @@ namespace EigenMaaltijd.Pages
             }
         }
 
+
         public void OnGet()
         {
             ViewData["keepLogin"] = HttpContext.Session.GetInt32("keepLogin");
@@ -68,35 +72,35 @@ namespace EigenMaaltijd.Pages
         {
             new MealRepository().Search(SearchTerm);
         }
-        public void OnPostRating(int mealID, int rate)
+        public IActionResult OnPostRating(int mealID, int rate)
         {
+            ViewData["keepLogin"] = HttpContext.Session.GetInt32("keepLogin");
+
             if (ViewData["keepLogin"] == null)
             {
-                RedirectToPage("inloggen");
+                return RedirectToPage("inloggen");
 
             }
-            int userid = (int)(ViewData["keepLogin"] = HttpContext.Session.GetInt32("keepLogin"));
-
-           
-
-            if (ViewData["keepLogin"] != null)
+            else
             {
+                int userid = (int)ViewData["keepLogin"];
                 new MealRepository().addRating(mealID, rate, userid);
 
             }
 
 
+            return Page();
         }
-            
-        
     }
 
- 
 
-    public class IndexMeal
-    {
-        public Meal meal { get; set; }
-        public User user { get; set; }
-        public String img64Url { get; set; }
+
+        public class IndexMeal
+        {
+            public Meal meal { get; set; }
+            public User user { get; set; }
+            public String img64Url { get; set; }
+           public int avgRating { get; set; }
+        }
     }
-}
+
