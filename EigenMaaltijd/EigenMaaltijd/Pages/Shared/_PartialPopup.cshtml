@@ -70,6 +70,14 @@
                     </div>
                 </form>
 
+                <div class="profile">
+                    <a asp-page="/ProfielPagina">
+                        <form method="post" asp-page-handler="GetData">
+                            <b>Profiel</b>
+                        </form>
+                    </a>
+                </div>
+
                 <script type="text/javascript">
                     var form = document.getElementById("ratingform");
                     console.log(document.getElementById("secret_submit"));
@@ -78,13 +86,7 @@
                     });</script>
             </div>
 
-            <div class="grid-item-6">
-                <a asp-page="/ProfielPagina">
-                    <form method="post" asp-page-handler="GetData">
-                        <b>Profiel</b>
-                    </form>
-                </a>
-            </div>
+
 
         </div>
 

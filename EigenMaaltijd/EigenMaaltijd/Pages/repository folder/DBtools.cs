@@ -13,9 +13,9 @@ namespace EigenMaaltijd.Pages
         {
             IDbConnection _db = new MySqlConnection(@"Server=localhost;
                                                     Port=3306;
-                                                    Database=eigenmaaltijd;
+                                                    Database=periode3;
                                                     Uid=root;
-                                                    Pwd=Onin2003!");
+                                                    Pwd=RyFYCz%8zKd9#");
             return _db;
         }
 
