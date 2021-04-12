@@ -20,8 +20,8 @@ namespace EigenMaaltijd.Pages
 
             int rows = _db.Execute
                 (
-                "INSERT INTO maaltijden (UserID, Name, Ingredients, Portions, PortionSize, Rating, Ingevroren, Betalingsmethode, Img) VALUES (@userID, @Name, @ingredients, @portions, @portionSize, @rating, @ingevroren, @betalingsmethode, @img)",
-                new { userID = meal.UserID, name = meal.Name, ingredients = meal.Ingredients, portions = meal.Portions, portionSize = meal.PortionSize, rating = meal.Rating, ingevroren = meal.Ingevroren, betalingsmethode = meal.Betalingsmethode, img = meal.Img }
+                "INSERT INTO maaltijden (UserID, Name, Ingredients, Portions, PortionSize,Ingevroren, Betalingsmethode, Img) VALUES (@userID, @Name, @ingredients, @portions, @portionSize, @ingevroren, @betalingsmethode, @img)",
+                new { userID = meal.UserID, name = meal.Name, ingredients = meal.Ingredients, portions = meal.Portions, portionSize = meal.PortionSize, ingevroren = meal.Ingevroren, betalingsmethode = meal.Betalingsmethode, img = meal.Img }
                 );
             return 0;
         }
@@ -140,21 +140,45 @@ namespace EigenMaaltijd.Pages
             return 0;
         }
 
-        public float addRating(int mealID, int Rating)
+        public int addRating(int mealID, int Rating, int userID)
         {
 
-            return 0;
-        }
+            using IDbConnection _db = Connect();
 
-        public float ChangeRating(int mealID, int Rating)
+            int rows = _db.Execute
+                (
+                "INSERT INTO rating (MealID, UserID, Rating) VALUES (@mealID, @userID, @rating)",
+                new { mealID = mealID, rating = Rating, userID = userID }
+                );
+            return rows;
+
+        }
+        public double GetAverageRating(int MealID)
         {
 
-            return 0;
+            using IDbConnection _db = Connect();
+
+            double AvgRating = _db.QuerySingleOrDefault<double>
+                (
+                "SELECT IFNULL(avg(Rating), 0) from rating WHERE MealID = @mealID",
+                new { mealID = MealID});
+            return AvgRating;
+
+
         }
 
+        public int ChangeRating(int mealID, int Rating)
+        {
 
+            using IDbConnection _db = Connect();
 
-          
+            int rows = _db.Execute
+                (
+                "UPDATE rating SET Rating = @rating WHERE mealID = @mealID",
+                new { rating = Rating, mealID = mealID }
+                );
+            return rows;
+        }
 
         public List<Meal> Search(string searchTerm)
         {

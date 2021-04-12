@@ -13,10 +13,10 @@ namespace EigenMaaltijd.Pages
         public string Ingredients { get; set; }
         public int Portions { get; set; }
         public string PortionSize { get; set; }
-        public float Rating { get; set; } 
-        public byte[] Img { get; set; }
         public bool Ingevroren { get; set; }
         public string Betalingsmethode { get; set; }
+        public byte[] Img { get; set; }
+  
 
     }
 }

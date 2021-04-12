@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web.WebPages.Html;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace EigenMaaltijd.Pages
 {
@@ -55,11 +57,10 @@ namespace EigenMaaltijd.Pages
             new MealRepository().AddMeal(meel);
         }
 
-
         public IActionResult OnPostPlaats()
         {
             meal.UserID = LogUser.UserID;
-
+         
             using (MemoryStream ms = new MemoryStream())
             {
                 test.CopyTo(ms);
@@ -70,6 +71,8 @@ namespace EigenMaaltijd.Pages
 
             return RedirectToPage("Index");
         }
+
+       
     }
 
 }

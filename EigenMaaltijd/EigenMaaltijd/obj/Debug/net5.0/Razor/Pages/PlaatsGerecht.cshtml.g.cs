@@ -499,10 +499,16 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For = ModelExpressionProvi
                     }
                     Write(__tagHelperExecutionContext.Output);
                     __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                    WriteLiteral("\r\n                                    </th>\r\n                                    <th>\r\n                                        <label for=\"ingevroren\" id=\"betaling\">Betaling:</label>\r\n                                        ");
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5d94818333a6788503eecb209f02ae1f26e825c442688", async() => {
+                    WriteLiteral(@"
+
+                                    </th>
+                                    
+                                    <th>
+                                        <label for=""Betalingsmethode"">Betaling:</label>
+                                        ");
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "32a80baa4699567f960899d4e289eb82fcce471742373", async() => {
                         WriteLiteral("\r\n                                            ");
-                        __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5d94818333a6788503eecb209f02ae1f26e825c443009", async() => {
+                        __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "32a80baa4699567f960899d4e289eb82fcce471742694", async() => {
                             WriteLiteral("Contant");
                         }
                         );
@@ -517,13 +523,29 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For = ModelExpressionProvi
                         }
                         Write(__tagHelperExecutionContext.Output);
                         __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                        WriteLiteral("\r\n                                        ");
+                        WriteLiteral("\r\n                                            ");
+                        __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "32a80baa4699567f960899d4e289eb82fcce471744093", async() => {
+                            WriteLiteral("Tikkie");
+                        }
+                        );
+                        __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
+                        __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
+                        __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper.Value = (string)__tagHelperAttribute_29.Value;
+                        __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_29);
+                        await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+                        if (!__tagHelperExecutionContext.Output.IsContentModified)
+                        {
+                            await __tagHelperExecutionContext.SetOutputContentAsync();
+                        }
+                        Write(__tagHelperExecutionContext.Output);
+                        __tagHelperExecutionContext = __tagHelperScopeManager.End();
+                        WriteLiteral("\r\n\r\n                                        ");
                     }
                     );
                     __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper>();
                     __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper);
 #nullable restore
-#line 176 "C:\Users\matti\Desktop\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\Pages\PlaatsGerecht.cshtml"
+#line 163 "C:\Users\ninob\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\Pages\PlaatsGerecht.cshtml"
 __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For = ModelExpressionProvider.CreateModelExpression(ViewData, __model => __model.meal.Betalingsmethode);
 
 #line default
@@ -544,12 +566,57 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For = ModelExpressionProvi
                                     </th>
                                 </tr>
                             </table>
-                            <br />
-                            <span>Ingrediënten toevoegen:</span>
-                            <table>
-                                <tr>
-                                    <th>");
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "5d94818333a6788503eecb209f02ae1f26e825c446405", async() => {
+                            </div>
+
+                            <div class=""flex vertical"">
+                                <span>Foto's</span>
+                                <div class=""grid col-g-2 gap-s"">
+                                    <div class=""featured-image upload"">");
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "32a80baa4699567f960899d4e289eb82fcce471747575", async() => {
+                    }
+                    );
+                    __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
+                    __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+                    __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.InputTypeName = (string)__tagHelperAttribute_32.Value;
+                    __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_32);
+                    __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.Name = (string)__tagHelperAttribute_33.Value;
+                    __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_33);
+#nullable restore
+#line 176 "C:\Users\ninob\Documents\GitHub\P3-groepsproject\EigenMaaltijd\EigenMaaltijd\Pages\PlaatsGerecht.cshtml"
+__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvider.CreateModelExpression(ViewData, __model => __model.test);
+
+#line default
+#line hidden
+#nullable disable
+                    __tagHelperExecutionContext.AddTagHelperAttribute("asp-for", __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+                    await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+                    if (!__tagHelperExecutionContext.Output.IsContentModified)
+                    {
+                        await __tagHelperExecutionContext.SetOutputContentAsync();
+                    }
+                    Write(__tagHelperExecutionContext.Output);
+                    __tagHelperExecutionContext = __tagHelperScopeManager.End();
+                    WriteLiteral(@"</div>
+                                    <div class=""grid col-g-2 gap-s"">
+                                        <div class=""upload""></div>
+                                        <div class=""upload""></div>
+                                        <div class=""upload""></div>
+                                        <div class=""upload""></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class=""flex vertical justify--between"">
+                            <div class=""flex vertical"">
+
+                                <br />
+                                <span>Ingrediënten toevoegen:</span>
+                                <table>
+                                    <tr>
+                                        <th>");
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "32a80baa4699567f960899d4e289eb82fcce471750466", async() => {
                     }
                     );
                     __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -573,16 +640,16 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                     Write(__tagHelperExecutionContext.Output);
                     __tagHelperExecutionContext = __tagHelperScopeManager.End();
                     WriteLiteral(@"</th>
-                                    <th><input type=""text"" placeholder=""Prijs..."" /></th>
-                                    <th><button>Toevoegen</button></th>
-                                </tr>
-                            </table>
-                        </div>
+                                       <th><input type=""text"" placeholder=""Prijs..."" /></th>
+                    <th><button>Toevoegen</button></th>
+                                    </tr>
+                                </table>
+                            </div>
 
-                        <div class=""grid col-g-2 gap-s"">
-                            <span>Totaal: €0,00</span>
-                            ");
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5d94818333a6788503eecb209f02ae1f26e825c448718", async() => {
+                            <div class=""grid col-g-2 gap-s"">
+                                <span>Totaal: €0,00</span>
+                                ");
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "32a80baa4699567f960899d4e289eb82fcce471753016", async() => {
                         WriteLiteral("Plaats het gerecht");
                     }
                     );
