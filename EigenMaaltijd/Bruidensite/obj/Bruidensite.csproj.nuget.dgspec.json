@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\P3-groepsproject\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj": {}
+    "D:\\GitHub\\P3-groepsproject\\EigenMaaltijd\\Bruidensite\\Bruidensite.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\P3-groepsproject\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj": {
+    "D:\\GitHub\\P3-groepsproject\\EigenMaaltijd\\Bruidensite\\Bruidensite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\P3-groepsproject\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj",
-        "projectName": "EigenMaaltijd",
-        "projectPath": "D:\\GitHub\\P3-groepsproject\\EigenMaaltijd\\EigenMaaltijd\\EigenMaaltijd.csproj",
+        "projectUniqueName": "D:\\GitHub\\P3-groepsproject\\EigenMaaltijd\\Bruidensite\\Bruidensite.csproj",
+        "projectName": "Bruidensite",
+        "projectPath": "D:\\GitHub\\P3-groepsproject\\EigenMaaltijd\\Bruidensite\\Bruidensite.csproj",
         "packagesPath": "C:\\Users\\Peter Jongman\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\P3-groepsproject\\EigenMaaltijd\\EigenMaaltijd\\obj\\",
+        "outputPath": "D:\\GitHub\\P3-groepsproject\\EigenMaaltijd\\Bruidensite\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Microsoft\\Xamarin\\NuGet\\"
@@ -43,32 +43,6 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "dependencies": {
-            "Carter": {
-              "target": "Package",
-              "version": "[5.2.0, )"
-            },
-            "Dapper": {
-              "target": "Package",
-              "version": "[2.0.78, )"
-            },
-            "Microsoft.AspNet.WebPages": {
-              "target": "Package",
-              "version": "[3.2.7, )"
-            },
-            "MySql.Data": {
-              "target": "Package",
-              "version": "[8.0.23, )"
-            },
-            "MySqlConnector": {
-              "target": "Package",
-              "version": "[1.3.1, )"
-            },
-            "Westwind.AspNetCore.LiveReload": {
-              "target": "Package",
-              "version": "[0.3.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

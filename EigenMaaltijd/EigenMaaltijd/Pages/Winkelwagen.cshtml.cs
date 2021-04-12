@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using EigenMaaltijd.Pages.repository_folder;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Http;
 
 namespace EigenMaaltijd.Pages
 {
@@ -59,6 +60,8 @@ namespace EigenMaaltijd.Pages
         {
             get
             {
+
+                ViewData["keepLogin"] = HttpContext.Session.GetInt32("keepLogin");
                 if (ViewData["keepLogin"] != null)
                 {
                     return new UserRepository().getUserFromID((int)ViewData["keepLogin"]);
@@ -67,6 +70,35 @@ namespace EigenMaaltijd.Pages
 
             }
         }
+
+
+        public List<OrderItem>ListOrders
+            { 
+            get 
+            
+            {
+                List<OrderItem> Order = new List<OrderItem>();
+                foreach (Shoppinglist Bestelling in new UserRepository().GetShoppinglists(LogUser.UserID)) 
+                {
+                    
+
+                    string prijs = new MealRepository().GetMealFromMealID(Bestelling.MealID).Prijs;
+                    string naam = new MealRepository().GetMealFromMealID(Bestelling.MealID).Name;
+                    OrderItem Meal = new OrderItem()
+                    {
+                        Prijs = prijs,
+                        Naam = naam
+                    };
+                
+                    Order.Add(Meal);
+
+                }
+                return Order;
+
+            } 
+        }
+
+
         [BindProperty(SupportsGet = true)]
         public string SearchTerm { get; set; }
         public string ButtonTextLogin
@@ -80,11 +112,12 @@ namespace EigenMaaltijd.Pages
                 return "Aanmelden";
             }
         }
-
-        [BindProperty]
-
-        public Shoppinglist Shoppinglist { get; set; }
-
+    }
+    public class OrderItem
+    {
+        public string Prijs { get; set; }
+        public string Naam { get; set; }
 
     }
+
 }

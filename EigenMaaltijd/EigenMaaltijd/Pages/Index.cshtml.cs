@@ -31,7 +31,7 @@ namespace EigenMaaltijd.Pages
                     String img64Url = string.Format("data:image/" + "jpg" + ";base64,{0}", img64);
                     IMeal.img64Url = img64Url;
 
-                    IMeal.avgRating = (int)Math.Round( new MealRepository().GetAverageRating(IMeal.meal.MealID));
+                    IMeal.avgRating = (int)Math.Round(new MealRepository().GetAverageRating(IMeal.meal.MealID));
 
 
                 }
@@ -121,73 +121,11 @@ namespace EigenMaaltijd.Pages
 
             }
 
-        }
-        public User LogUser
-        {
-            get
-            {
-                if (ViewData["keepLogin"] != null)
-                {
-                    return new UserRepository().getUserFromID((int)ViewData["keepLogin"]);
-                }
-                return null;
+            return Page();
 
-            }
-        }
-        [BindProperty(SupportsGet = true)]
-        public string SearchTerm { get; set; }
-        public string ButtonTextLogin
-        {
-            get
-            {
-                if (LogUser != null)
-                {
-                    return "Afmelden";
-                }
-                return "Aanmelden";
-            }
         }
 
-        public void OnGet()
-        {
-            ViewData["keepLogin"] = HttpContext.Session.GetInt32("keepLogin");
-        }
-        public void OnPostSearch()
-        {
-            new MealRepository().Search(SearchTerm);
-        }
-
-        public ActionResult OnPostList()
-        {
-            string returnString = "";
-            {
-                MemoryStream stream = new MemoryStream();
-
-                Request.Body.CopyTo(stream);
-                stream.Position = 0;
-                using (StreamReader reader = new StreamReader(stream))
-                {
-                    string requestBody = reader.ReadToEnd();
-                    if (requestBody.Length > 0)
-                    {
-                        var obj = JsonConvert.DeserializeObject<PostData>(requestBody);
-                        if (obj != null)
-                        {
-                            HttpContext.Session.SetInt32("ClickedMeal", Convert.ToInt32(obj.Item1));
-                            returnString = obj.Item1;
-                        }
-                    }
-                }
-            }
-            List<string> lstString = new List<string>
-            {
-            returnString
-            };
-
-                return new JsonResult(lstString);
-        }
-        
-        public ClickedMeal ClickedMeal 
+        public ClickedMeal ClickedMeal
         {
             get
             {
@@ -212,7 +150,8 @@ namespace EigenMaaltijd.Pages
                             Rating = meal.Rating,
                             Img = meal.Img,
                             Ingevroren = meal.Ingevroren,
-                            Betalingsmethode = meal.Betalingsmethode
+                            Betalingsmethode = meal.Betalingsmethode,
+                            Prijs = meal.Prijs
                         };
                         return CMeal;
                     }
@@ -222,12 +161,12 @@ namespace EigenMaaltijd.Pages
                     }
 
                 }
-                else 
+                else
                 {
                     return new ClickedMeal();
                 }
             }
-        
+
         }
 
         public PartialViewResult OnGetMealPartial()
@@ -235,45 +174,26 @@ namespace EigenMaaltijd.Pages
             return Partial("_PartialPopup", ClickedMeal);
         }
 
-        public void OnPostbestel(int mealID, int userID, int Quantity)
+        public IActionResult OnPostChange(int mealID, int quantity)
         {
+            Meal meal = new MealRepository().GetMealFromMealID(ClickedMeal.MealID);
+
+            meal.Portions -= quantity;
+
+            new MealRepository().ChangeMeal(meal);
+
             DateTime ordertime = DateTime.Now;
-            Shoppinglist Winkelwagen = new Shoppinglist() 
-            {MealID = mealID, UserID = userID, Hoeveelheid = Quantity, Date = ordertime};
+            Shoppinglist Winkelwagen = new Shoppinglist()
+            { MealID = mealID, UserID = LogUser.UserID, Hoeveelheid = quantity, Date = ordertime };
+            new UserRepository().Plaatsbestelling(Winkelwagen);
+
+            return new PageResult();
+
         }
 
 
 
 
-    }
-
-    public class ClickedMeal
-    {
-        public int MealID { get; set; }
-        public int UserID { get; set; }
-        public string Name { get; set; }
-        public List<string> Ingredients { get; set; }
-        public int Portions { get; set; }
-        public string PortionSize { get; set; }
-        public float Rating { get; set; }
-        public byte[] Img { get; set; }
-        public bool Ingevroren { get; set; }
-        public string Betalingsmethode { get; set; }
-    }
-
-
-
-
-    public class PostData
-    {
-        public string Item1 { get; set; }
-    }
-
-    public class IndexMeal
-    {
-        public Meal meal { get; set; }
-        public User user { get; set; }
-        public String img64Url { get; set; }
     }
 
     public class ClickedMeal
@@ -299,12 +219,13 @@ namespace EigenMaaltijd.Pages
         public string Item1 { get; set; }
     }
 
-        public class IndexMeal
-        {
-            public Meal meal { get; set; }
-            public User user { get; set; }
-            public String img64Url { get; set; }
-           public int avgRating { get; set; }
-        }
+    public class IndexMeal
+    {
+        public Meal meal { get; set; }
+        public User user { get; set; }
+        public String img64Url { get; set; }
+        public int avgRating { get; set; }
     }
+
+}
 

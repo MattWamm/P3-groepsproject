@@ -51,9 +51,9 @@
 
                 <p>€ @Model.Prijs per portie</p>
                 <h4>Aantal porties: @Model.Portions</h4>
-                <form class="Bestellen" method="post" asp-page-handler="change">
+                <form class="Bestellen" method="post" asp-page-handler="Change">
                     <input type="number" id="quantity" name="quantity" min="1" max="@Model.Portions">
-                    <input type="submit" name="Bestellen">
+                    <input type="submit" asp-route-mealID="@Model.MealID" name="Bestellen">
                 </form>
                 <div class="rate">
                     <input type="radio" id="star5" name="rate" value="5" />

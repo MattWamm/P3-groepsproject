@@ -105,9 +105,9 @@
                     </ul>
                     <p>€ per portie</p>
                     <h4>Aantal porties:</h4>
-                    <form class="Bestellen" method="post">
+                    <form class="Bestellen" method="post" asp-page-handler="bestel">
                         <input type="number" id="quantity" name="quantity" min="1" max="">
-                        <input type="submit" asp-page-handler="bestel" asp-route-mealID="@Model.ClickedMeal.MealID" asp-route-userID="@Model.ClickedMeal.UserID" id="Bestellen">
+                        <input type="submit"  asp-route-mealID="@Model.ClickedMeal.MealID" asp-route-userID="@Model.ClickedMeal.UserID" id="Bestellen" value="Bestellen">
                     </form>
                     <form method="post" asp-page-handler="Rating" id="ratingform">
 

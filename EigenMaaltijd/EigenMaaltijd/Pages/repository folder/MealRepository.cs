@@ -198,25 +198,5 @@ namespace EigenMaaltijd.Pages
         }
 
 
-          
-
-        public List<Meal> Search(string searchTerm)
-        {
-        
-           List<Meal> _mealRepository = new MealRepository().GetAllMeals();
-            
-            if (!string.IsNullOrEmpty(searchTerm))
-            {
-                return _mealRepository.Where(m => m.Name.ToLower().Contains(searchTerm.ToLower())).ToList();
-            }
-            else
-            {
-                return _mealRepository;
-            }
-
-
-        }
-
-
     }
 }

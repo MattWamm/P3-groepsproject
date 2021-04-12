@@ -130,17 +130,29 @@ namespace EigenMaaltijd.Pages
             return rows ;
         }
 
-        //public void Plaatsbestelling()
-        //{ 
-        //    using IDbConnection _db = Connect();
-        //        int rows = _db.Execute
-        //                (
-        //                "INSERT INTO bestelinformatie()",
-        //                new
-        //                {
-        //                    Hoeveelheid = Hoeveelheid,
-        //                });
+        public void Plaatsbestelling(Shoppinglist shoppinglist)
+        {
+            using IDbConnection _db = Connect();
+            int rows = _db.Execute
+                    (
+                    "INSERT INTO bestelinformatie(Hoeveelheid, MealID, UserID, Date) Values (@Hoeveelheid, @MealID, @UserID, @Date)",
+                    new
+                    {
+                        Hoeveelheid = shoppinglist.Hoeveelheid,
+                        MealID = shoppinglist.MealID,
+                        UserID = shoppinglist.UserID,
+                        Date = shoppinglist.Date
+                    });
+        }
 
-        //}
+        public List<Shoppinglist> GetShoppinglists(int UserID) 
+        {
+                using IDbConnection _db = Connect();
+                List<Shoppinglist> returnList = _db.Query<Shoppinglist>
+                    ("SELECT * FROM bestelinformatie WHERE UserID = @userID",
+                    new { userID = UserID }).ToList();
+                return returnList;
+        }
+
     }
 }
