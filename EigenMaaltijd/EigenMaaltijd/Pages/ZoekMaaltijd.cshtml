@@ -1,0 +1,44 @@
+﻿@page
+@model EigenMaaltijd.Pages.ZoekMaaltijdModel
+@{
+}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/EigenMaaltijd.css">
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <title>Maaltijd Zoeken</title>
+</head>
+<body>
+
+    <div class="container-fluid" id="container_zoekmaaltijd_1">
+        <nav class="navbar navbar-expand" id="nav">
+            <a class="navbar-brand" asp-page="/Index"><img src="~/img/Testlogo.png" height="35" width="140" alt="Testlogo EigenMaaltijd" id="Testlogo" /></a>
+
+            <form class="form" id="form_zoekbalk" method="post" asp-page-handler="Search">
+                <input class="form-control" type="search" placeholder="Zoeken naar gerecht..." id="input_zoekbalk" asp-for="SearchTerm">
+            </form>
+            <a class="navbar" id="aanmelden" asp-page="/Inloggen"><img src="~/img/Profiellogo.png" height="20" width="20" alt="Logo Mijn Profiel" id="Profiellogo" /> &nbsp Aanmelden</a>
+
+
+
+        </nav>
+    </div>
+    <div class="container-fluid" id="container_zoekmaaltijd_2">
+
+
+        @if (Model.Meals != null)
+        {
+            @foreach (var m in Model.Meals)
+            {
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        @m.Name
+
+                    </li>
+                </ul>
+            }
+        }
+
+    </div>
+</body>
